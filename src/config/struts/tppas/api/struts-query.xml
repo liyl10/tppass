@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 查询 -->
+	<package name="query" extends="admin" namespace="/api/query">
+		<!-- 项目查询 -->
+		<action name="projectQuery" class="com.hopsun.tppas.api.query.action.ProjectQueryAction">
+			<result name="init">/api_tppas/query/project_search.jsp</result>
+			<result name="query">/api_tppas/query/project_list.jsp</result>
+		</action>
+		<!-- 合同查询 -->
+		<action name="contractQuery" class="com.hopsun.tppas.api.query.action.ContractQueryAction">
+			<result name="init">/api_tppas/query/contract_search.jsp</result>
+			<result name="query">/query/acceptance/contract_list.jsp</result>
+		</action>
+		<!-- 申报单位查询 -->
+		<action name="companyQuery" class="com.hopsun.tppas.api.query.action.CompanyQueryAction">
+			<result name="init">/api_tppas/query/company_search.jsp</result>
+			<result name="query">/api_tppas/query/company_list.jsp</result>
+		</action>
+		<!-- 专家评审查询 -->
+		<action name="expertQuery" class="com.hopsun.tppas.api.query.action.ExpertQueryAction">
+			<result name="init">/api_tppas/query/expert_search.jsp</result>
+			<result name="query">/api_tppas/query/expert_list.jsp</result>
+		</action>
+	</package>
+</struts>

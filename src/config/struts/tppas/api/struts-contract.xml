@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 合同签订 -->
+	<package name="contract" extends="admin" namespace="/api/contract">
+		<!-- 合同管理 -->
+        <action name="tcontract" class="com.hopsun.tppas.api.contract.action.TcontractAction">
+        	<result name="init">/api_tppas/contract/contract_management.jsp</result>
+        	<result name="list">/api_tppas/contract/contract_management_list.jsp</result>
+        	<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+			<result name="Detailmanage">/api_tppas/contract/other/contract_menu.jsp</result>
+        	<result name="initKnow">/api_tppas/contract/other/contract_know.jsp</result>
+        	<result name="showIndexList">/api_tppas/contract/other/contract_index_list.jsp</result>
+        	<result name="showIndexInsert">/api_tppas/contract/other/contract_index_insert.jsp</result>
+        	<result name="showIndexUpdate">/api_tppas/contract/other/contract_index_update.jsp</result>
+        	<result name="submitList">/api_tppas/contract/other/contract_submit.jsp</result>
+        </action> 
+        
+        <!-- 高新处 合同管理 -->
+        <action name="tcontracthighTech" class="com.hopsun.tppas.api.contract.action.TcontractHighTechAction">
+        	<result name="Detailmanage">/api_tppas/contract/highTech/contract_menu.jsp</result>
+        	<result name="description">/api_tppas/contract/highTech/contract_description.jsp</result>
+        	<result name="showIndexList">/api_tppas/contract/highTech/contract_index_list.jsp</result>
+        	<result name="showIndexInsert">/api_tppas/contract/highTech/contract_index_insert.jsp</result>
+        	<result name="showIndexUpdate">/api_tppas/contract/highTech/contract_index_update.jsp</result>
+        	<result name="submitList">/api_tppas/contract/highTech/contract_submit.jsp</result>
+        	<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+        </action>
+        <!-- 高新处合同封皮 -->
+        <action name="tcontractCoverhighTech" class="com.hopsun.tppas.api.contract.action.TcontractCoverAHighTechAction">
+        	<result name="init">/api_tppas/contract/highTech/contract_cover.jsp</result>
+        	<result name="initcredit">/api_tppas/contract/highTech/contract_cover_credit.jsp</result>
+        	<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+        </action>
+        <!-- 高新处合同内容 -->
+        <action name="tcontractContentsA" class="com.hopsun.tppas.api.contract.action.TcontractContentsAAction">
+        	<result name="initContents">/api_tppas/contract/highTech/contract_contents.jsp</result>
+        	<result name="initContentscredit">/api_tppas/contract/highTech/contract_contents_credit.jsp</result>
+        </action>
+        
+        <!-- 项目经费使用表 -->
+        <action name="tfundUseA" class="com.hopsun.tppas.api.contract.action.TfundUseAAction">
+        	<result name="tfunduse">/api_tppas/contract/highTech/contract_funduse.jsp</result>
+        </action>
+
+        <!-- 合同封皮 -->
+        <action name="tcontractCover" class="com.hopsun.tppas.api.contract.action.TcontractCoverAAction">
+        	<result name="init">/api_tppas/contract/other/contract_cover.jsp</result>
+        	<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+        </action>
+        <!-- 项目总体情况及主要内容 -->
+        <action name="tcontractContentsB" class="com.hopsun.tppas.api.contract.action.TcontractContentsBAction">
+        	<result name="initContents">/api_tppas/contract/other/contract_overall_content.jsp</result>
+        	<result name="initObligation">/api_tppas/contract/other/contract_obligation.jsp</result>
+        </action>
+        <!-- 项目经费计划表-->
+        <action name="tfundingPlanB" class="com.hopsun.tppas.api.contract.action.TfundingPlanBAction">
+        	<result name="init">/api_tppas/contract/other/contract_fund_plan.jsp</result>
+        </action>
+       	<!-- 项目经费计划表-->
+        <action name="tappropriationSingle" class="com.hopsun.tppas.api.contract.action.TappropriationSingleAction">
+        	<result name="init">/api_tppas/contract/contract_funds_list.jsp</result>
+        	<result name="insertOrupdate">/api_tppas/contract/contract_funds_update.jsp</result>
+        </action>
+	</package>
+</struts>

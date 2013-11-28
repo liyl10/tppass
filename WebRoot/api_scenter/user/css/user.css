@@ -1,0 +1,51 @@
+.sel_role{ width: 520px; text-align:left;   margin-left:0px; }
+.per_role{ width:120px; height:30px; line-height:30px; float:left;   margin:2px; padding:2px; display:block; overflow:hidden;}
+.per_role_view{width:120px; height:20px; line-height:20px; float:left; border:#CAD6E1 1px solid; margin:2px; display:block; overflow:hidden; text-align:center}
+
+.pop_box{
+	width:500px;
+	z-index:99;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	display:none;
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	right: auto;
+	background:#FFF;
+	border:#A8C8C8 1px solid;
+	}
+.pop_box_handel{
+	width:auto;
+	background-color:#C8E1E3;
+	height:30px; 
+	}	
+	.pop_box_handel_tit{
+	width:120px;
+	height:30px;
+	float:left;
+	}	
+	.pop_box_handel_close{
+	width:25px;
+	height:19px;
+	margin-right:5px; 
+	margin-top:5px;
+	float:right;
+	background-image: url(../../images/box_close1.gif);
+	}	
+.pop_box_content{
+	width:auto;
+	height:200px; 
+	overflow:auto;
+	}	
+.pop_box_ctrl{
+	text-align:center;
+	width:auto;
+	height:30px; 
+	}		
+	
+.div_user_tree{
+	width:auto;
+	height:auto;
+}

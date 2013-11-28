@@ -1,0 +1,608 @@
+@charset "utf-8";
+
+/*	
+	Name:        初始化浏览器样式
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局头部
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+* {
+	margin: 0px auto;
+	padding: 0px;
+	list-style: none;
+	font-family: Tahoma, Helvetica, Arial, sans-serif;
+	color: #666;
+	font-size: 12px;
+}
+
+img {
+	border: 0;
+}
+
+body {
+	margin: 10px;
+}
+
+ul,li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 18px
+}
+
+h2 {
+	font-size: 16px
+}
+
+h3 {
+	font-size: 14px
+}
+
+h1 {
+	font-weight: bold
+}
+
+h2 {
+	font-weight: bold
+}
+
+h3 {
+	font-weight: bold
+}
+
+h4 {
+	font-weight: bold
+}
+
+h5 {
+	font-weight: bold
+}
+
+h6 {
+	font-weight: bold
+}
+
+strong {
+	font-weight: bold
+}
+
+input {
+	font-family: inherit
+}
+
+buttom {
+	font-family: inherit
+}
+
+textarea {
+	font-family: inherit
+}
+
+select {
+	font-family: inherit
+}
+
+/*	
+	Name:        字体颜色定义
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 blue为蓝色  red为红色
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.blue {
+	color: #336699;
+}
+
+.blue a {
+	color: #336699;
+	text-decoration: none;
+}
+
+.blue a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+.red {
+	color: #f00;
+}
+
+/*	
+	Name:        模型定位
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 fleft浮动向左  fright浮动向右  clear清除浮动
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+/*	
+	Name:        头部
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局头部
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.top_box {
+	background: url(../images/top_bg.jpg) repeat-x left top;
+	height: 57px;
+}
+
+.top_box span.right {
+	font-size: 12px;
+	color: #333;
+	margin-right: 10px;
+	line-height: 24px;
+	float: right;
+}
+
+.top_box span.right a {
+	color: #333;
+	text-decoration: none;
+}
+
+.top_box span.right a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+.ul_lanmu {
+	float: left;
+	margin-left: 50px;
+	margin-top: 8px;
+}
+
+.ul_lanmu li {
+	float: left;
+	display: inline;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	color: #488bd1;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	width: 70px;
+}
+
+.ul_lanmu li span {
+	text-align: center;
+	color: #488bd1;
+	width: 70px;
+	float: left;
+}
+
+.ul_lanmu li span a {
+	color: #488bd1;
+	text-decoration: none;
+}
+
+.ul_lanmu li span a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+.ul_lanmu li span.hover {
+	color: #f60;
+}
+
+.ul_lanmu li span.hover a {
+	color: #f60;
+	text-decoration: none;
+}
+
+.ul_lanmu li span.hover a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+/*	
+	Name:        左边菜单
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局左边
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.left_box {
+	background: #eaf7ff url(../images/left_bg.gif) repeat-y right top;
+	min-height: 650px;
+	_height: 650px;
+	width: 185px;
+}
+
+.form_sbox {
+	border: solid 1px #9ac2e5;
+	line-height: 20px;
+	height: 20px;
+	margin: 10px;
+	background: #fff;
+	text-align: left;
+}
+
+.left_search {
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+	height: 20px;
+	width: 125px;
+	margin-left: 0px;
+	float: left;
+	border: 0;
+	margin-right: 5px;
+}
+
+.left_btn {
+	background: #fff url(../images/leftmune_search.gif) no-repeat right;
+	height: 20px;
+	width: 15px;
+	border: none;
+	cursor: pointer;
+}
+
+/* 折叠菜单 */
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+	margin-left: 3px;
+}
+
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+
+.dtree a.node,.dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.dtree a.node:hover,.dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+
+.dtree .clip {
+	overflow: hidden;
+}
+
+/*	
+	Name:        面包屑导航
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.web_nav {
+	text-align: left;
+	font-size: 12px;
+	line-height: 24px;
+	color: #333;
+}
+
+.web_nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+.web_nav a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+/*	
+	Name:        按钮
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.btn_box {
+	background: repeat-x left top;
+	height: 20px;
+	border: solid 1px #b9d3e2;
+	padding-left: 2px;
+	padding-right: 1px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #488bd1;
+	margin-right: 0px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.btn_box a {
+	color: #488bd1;
+	text-decoration: none;
+}
+
+.btn_box a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+
+/*	
+	Name:        展示表格
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.show_table {
+	background: #dde9f5;
+	margin-top: 10px;
+}
+
+.show_table td {
+	background: #fff;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #333;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	word-break: break-all;
+}
+
+.show_table td.tips {
+	padding: 15px;
+}
+
+.show_table td.left {
+	background: #f4f8fc;
+	text-align: right;
+	padding-right: 10px;
+	width: 160px;
+}
+
+.show_table td.center {
+	text-align: center;
+}
+
+.show_table th {
+	background: #eaf2fa;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #333;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.show_table td a {
+	color: #333;
+	text-decoration: none;
+}
+
+.show_table td a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+/*	
+	Name:        表单元素
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.text_box {
+	height: 22px;
+	line-height: 20px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: solid 1px #dde9f5;
+	font-size: 12px;
+	color: #333;
+}
+
+.textarea_box {
+	line-height: 18px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: solid 1px #dde9f5;
+	font-size: 12px;
+	color: #333;
+}
+
+/*	
+	Name:        列表表格
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.list_table {
+	background: #dde9f5;
+	margin-top: 10px;
+}
+
+.list_table td {
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #333;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.list_table td.tips {
+	padding: 15px;
+}
+
+.list_table td.left {
+	text-align: left;
+}
+
+.list_table th {
+	background: #eaf2fa;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.list_table td a {
+	color: #333;
+	text-decoration: none;
+}
+
+.list_table td a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+
+.list_table tr.over {
+	background: #eff7ff;
+}
+
+.list_table tr.out {
+	background: #fff;
+}
+
+.list_table tr.hover {
+	background: #fff;
+}
+
+.list_table td.nhover {
+	background: #fff;
+}
+
+/*	
+	Name:        分页
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.page {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.page span {
+	padding: 3px;
+	line-height: 25px;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.page .page_up {no-repeat left center;
+	border: solid 1px #cccccc;
+	color: #5566dd;
+	padding-left: 13px;
+}
+
+.page .page_down {no-repeat right center;
+	border: solid 1px #cccccc;
+	color: #5566dd;
+	padding-right: 13px;
+}
+
+.page .hover {
+	background: #ffd7be;
+	border: solid 1px #f25601;
+	color: #f60;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.page .uni {
+	background: #f7f7f7;
+	border: solid 1px #d7d7d7;
+	color: #000;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.page span a {
+	color: #5566dd;
+}
+
+.page span a:hover {
+	color: #f60;
+}
+
+.page .hover a {
+	color: #f60;
+	font-weight: bold;
+}
+
+/*	
+	Name:        图标示意
+	Level:		 Global
+	Dependent:	 无
+	Sample:		 全局
+	Explain:	 无
+	Author:		 张君茹  2011-11-01 14:15
+	Last Modify: 张君茹  2011-11-01 14:15
+*/
+.icon_box {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #333;
+}
+
+.icon_box strong {
+	color: #333;
+}

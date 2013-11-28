@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- 
+@comment 日志Struts配置文件
+@author zzze
+@date Dec 27, 2012
+@version 1.0
+ -->
+<struts>
+	<package name="log" extends="admin" namespace="/api/log">
+    	<action name="log_*" class="com.hopsun.subgroups.logs.action.LogAction"  method="{1}">
+       	 	<result name="{1}">/subgroups/log/jsp/log_{1}.jsp</result>
+       	 	<result name="goDetail">/subgroups/log/jsp/log_detail.jsp</result>
+       	 	<result type="redirect">/api/log/log_list.action</result>
+    	</action>
+	</package>
+</struts>

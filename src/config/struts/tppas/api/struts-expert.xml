@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!--专家管理 -->
+	<package name="expert" extends="admin" namespace="/api/expert">
+		<action name="texpertAction" class="com.hopsun.tppas.api.expert.action.TexpertAction">
+			<result name="experManager">/api_tppas/expert/expertDatabase/expert_manage.jsp</result>
+			<result name="list">/api_tppas/expert/expertDatabase/expert_list.jsp</result>
+			<result name="insert">/api_tppas/expert/expertDatabase/expert_add.jsp</result>
+			<result name="initmenu">/api_tppas/expert/expertDatabase/expert_menu.jsp</result>
+			<result name="modify">/api_tppas/expert/expertDatabase/expert_modify.jsp</result>
+			<!-- 统计  wanglw  Start-->
+			<result name="showExpertStatistic">/api_tppas/expert/expertStatistic/expert_statistic_manage.jsp</result>
+			<result name="getExpertStatisticList">/api_tppas/expert/expertStatistic/expert_statistic_list.jsp</result>
+			<!-- 统计  wanglw  End-->
+		</action>
+		<!-- 技术成果 -->
+		<action name="ttechnologyGainAction" class="com.hopsun.tppas.api.expert.action.TtechnologyGainAction">
+		 <result name="list">/api_tppas/expert/expertDatabase/technology_gain_list.jsp</result>
+		 <result name="insert">/api_tppas/expert/expertDatabase/technology_gain_add.jsp</result>
+		 <result name="modify">/api_tppas/expert/expertDatabase/technology_gain_update.jsp</result>
+		 <result name="show">/api_tppas/expert/expertDatabase/technology_gain_show.jsp</result>
+		</action>
+		<!--专家评审管理 -->
+		<action name="texpertScoreAction" class="com.hopsun.tppas.api.expert.action.TexpertScoreAction">
+			<result name="auditManager">/api_tppas/expert/expertManager/audit_manage.jsp</result>
+			<result name="auditList">/api_tppas/expert/expertManager/audit_list.jsp</result>
+			<result name="highTechManager">/api_tppas/expert/expertManager/audit_high_tech_menu.jsp</result>
+			<result name="otherManager">/api_tppas/expert/expertManager/audit_other_menu.jsp</result>
+			<result name="initExpertAudit">/api_tppas/expert/expertManager/expert_audit.jsp</result>
+		</action>
+		<!--专家信息维护 -->
+		<action name="texpertInfoAction" class="com.hopsun.tppas.api.expert.action.TexpertInfoAction">
+			<result name="expertMenu">/api_tppas/expert/expertManager/expert_menu.jsp</result>
+			<result name="update">/api_tppas/expert/expertManager/expert_update.jsp</result>
+			<result name="list">/api_tppas/expert/expertManager/technology_gain_list.jsp</result>
+			<result name="insert">/api_tppas/expert/expertManager/technology_gain_add.jsp</result>
+			<result name="modify">/api_tppas/expert/expertManager/technology_gain_update.jsp</result>
+			<result name="show">/api_tppas/expert/expertManager/technology_gain_show.jsp</result>
+		</action>
+		<!-- 项目专家评审意见 -->
+		<action name="texpertScoreWriteAction" class="com.hopsun.tppas.api.expert.action.TexpertScoreWriteAction">
+			<result name="projectManager">/api_tppas/expert/expertScore/project_manage.jsp</result>
+			<result name="projectList">/api_tppas/expert/expertScore/project_list.jsp</result>
+			<result name="initScoreWrite">/api_tppas/expert/expertScore/expert_score_manager.jsp</result>
+			<result name="auditProjectList" type="json">
+				<param name="includeProperties">projectListStr</param>
+			</result>
+			<result name="expertScoreForm">/api_tppas/expert/expertScore/expert_score_form.jsp</result>
+		</action>
+	</package>
+</struts>

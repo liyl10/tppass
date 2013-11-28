@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- 
+@comment 登陆Struts配置文件
+@author dulei
+@date 2013-01-11
+@version 1.0
+ -->
+	<package name="login" extends="admin" namespace="/api">
+    	<action name="login_*" class="com.hopsun.scenter.api.login.action.LoginAction" method="{1}">
+       	 	<result name="destory">/api_scenter/login/login.jsp</result>
+       	 	<result name="index">/api_scenter/login/index.jsp</result>
+       	 	<result name="top">/api_scenter/login/top.jsp</result>
+       	 	<result name="main">/api_scenter/login/left.jsp</result>
+       	 	<result name="logout">/api_scenter/login/logout.jsp</result>
+       	 	<result name="ssoLogin">/api_scenter/login/index.jsp</result>
+    	</action>
+	</package>
+	<package name="tologin" extends="admin" namespace="/">
+    	<action name="*" class="com.hopsun.scenter.api.login.action.LoginAction" method="{1}">
+<!--     		<result name="tologin">/api_scenter/login/index.jsp</result> -->
+    		<result name="tologin">/api_xapdpms/mainService.jsp</result>
+    	</action>
+	</package>
+	
+	<package name="jsonlogin" extends="json-default"  namespace="/login">
+	   	<action name="getpost" class="com.hopsun.scenter.api.login.action.LoginAction"  method="getPost">
+	   	</action>
+	</package>
+</struts>

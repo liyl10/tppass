@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+@charset "utf-8";
+/* CSS Document */
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+.fl{ float:left;}
+.fr{ float:right;}
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, group, menu, nav, section {
+	margin: 0;
+	padding: 0;
+}
+img{ border:none;}
+.clear{ clear:both;}
+li{ list-style:none;}
+body{ background:#1685d3 url(../../images/admin-main-box.png) no-repeat center top; height:607px;}
+.admin-main{ width:692px; height:430px; margin-left:auto; margin-right:auto; padding:136px 30px 30px 30px;}
+.login-box{ position:relative;}
+.admin-login{width: 100%; position:absolute; z-index:99;}
+.admin-login .adminTitle{height:375px ;overflow: hidden; width:130px; float:left;}
+.admin-login .adminTitle ul{border:0; margin:0; padding:0;}
+.admin-login .adminTitle li{width: 130px; cursor: pointer; list-style:none; text-align: center; line-height:101px; height:101px; margin-bottom:35px; float:left;}
+.admin-login .adminTitle .active{ background:url(../../images/admin-li-hover.png) no-repeat right center; width:129px; width:130px\9; -moz-width:130px;}
+@-moz-document url-prefix() { .admin-login .adminTitle .active { width: 130px; } } 
+.admin-login .adminContent{width:520px; float:left; padding:30px 20px;}
+	.admin-login .adminContent ul{ margin-left:0px;}
+	.admin-login .adminContent ul li{ height:35px; line-height:35px; margin-bottom:25px; font-family:"Microsoft YaHei";}
+	.admin-login .adminContent ul li .left{ width:75px; float:left; text-align:right; font-size:22px; color:#0057af; }
+	.admin-login .adminContent ul li .right{ float:left; margin-left:10px;}
+.select-box{ width:222px; height:30px; line-height:30px; font-size:20px; color:#80a3c6;}
+.input-text{ width:214px; height:28px; line-height:28px; border:solid 1px #075cb2; font-size:20px; color:#80a3c6; padding-left:3px; padding-right:3px;}
+.yzm-box{ font-size:14px; color:#003a75;}
+	.yzm-box a{color:#003a75; text-decoration:none;}
+	.yzm-box a:hover{color:#003a75; text-decoration: underline;}
+	.yzm-box img{ width:94px; height:30px; margin-top:2px; margin-right:3px;}
+.admin-btn{ background:url(../../images/admin-btn.gif) no-repeat left top; width:220px; height:34px; line-height:34px; text-align:center; color:#fff; font-family:"Microsoft YaHei"; font-size:18px; border:none; margin-left:75px; cursor:pointer;}
+.none {display:none;}

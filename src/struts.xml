@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- 是否显示详细错误信息 -->
+	<constant name="struts.devMode" value="false" />
+	<!-- convention类重新加载 -->
+	<constant name="struts.convention.classes.reload" value="false" />
+	<!-- 浏览器是否缓存静态内容 -->
+	<constant name="struts.serve.static.browserCache" value="true" />
+	<!-- 上传文件大小限制设置 -->
+	<constant name="struts.multipart.maxSize" value="-1" />
+	<!-- 允许静态方法调用 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	
+	<!-- 主题 -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!-- 后缀 -->
+	<constant name="struts.action.extension" value="action" />
+	<!-- URL资源分隔符 -->
+	<constant name="struts.convention.action.name.separator" value="_" />
+	<!-- 国际化资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="/config/message/tppas/tppas_resources" />
+	
+
+	<package name="basePackage" extends="json-default,struts-default">
+		<interceptors>
+			<interceptor-stack name="baseStack">
+				<interceptor-ref name= "defaultStack" >
+    				<param name="exception.logEnabled" >true</param>
+    				<param name="exception.logLevel" >error</param>
+				</interceptor-ref>
+                <interceptor-ref name="exception" />
+                <interceptor-ref name="alias" />
+                <interceptor-ref name="servletConfig" />
+                <interceptor-ref name="i18n" />
+                <interceptor-ref name="prepare" />
+                <interceptor-ref name="chain" />
+                <interceptor-ref name="debugging" />
+                <interceptor-ref name="scopedModelDriven" />
+                <interceptor-ref name="modelDriven" />
+                <interceptor-ref name="fileUpload" />
+                <interceptor-ref name="checkbox" />
+                <interceptor-ref name="multiselect" />
+                <interceptor-ref name="staticParams" />
+                <interceptor-ref name="actionMappingParams" />
+                <interceptor-ref name="params">
+					<param name="excludeParams">dojo\..*,^struts\..*</param>
+                </interceptor-ref>
+                <interceptor-ref name="conversionError"/>
+                <!-- 配置方法级别的校验 -->
+                <interceptor-ref name="validation">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                    <param name="validateAnnotatedMethodOnly">true</param>
+                </interceptor-ref>
+                <interceptor-ref name="workflow">
+                    <param name="excludeMethods">input,back,cancel,browse</param>
+                </interceptor-ref>
+            </interceptor-stack>
+		</interceptors>
+
+		<!-- 配置默认拦截器栈 -->
+		<default-interceptor-ref name="baseStack" />
+
+		<!-- 未到找Action指向页面 -->
+		<default-action-ref name="errorPage" />
+
+		<action name="errorPage">
+			<result type="redirect">/html/error_page_404.html</result>
+		</action>
+
+	</package>
+	
+	<package name="admin" extends="basePackage" namespace="/">
+		<interceptors>
+			<interceptor name="login" class="com.hopsun.scenter.api.util.LoginStateFiter"/>
+			<interceptor name="authlimit" class="com.hopsun.scenter.api.util.AuthFilter"/>
+			<interceptor-stack name="adminStack">
+			    <interceptor-ref name="login"/>
+			    <interceptor-ref name="authlimit"/>
+				<interceptor-ref name="baseStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<!-- 配置默认拦截器栈 -->
+		<default-interceptor-ref name="adminStack"/>
+
+		<global-results>
+			<result name="tologin">/api_scenter/login/login.jsp</result>
+			<result name="LogOut"  type="redirect">/api/login_tologin.action</result>
+			<result name="success">/api_scenter/info/successful.jsp</result>
+       	 	<result name="error">/api_scenter/info/error.jsp</result>
+       	 	<result name="auth_fail">/api_scenter/info/auth_fail.jsp</result>
+       	 	<result name="systemInfo">/api_tppas/systemInfoTip.jsp</result>
+            <result name="systemInfoNext">/api_tppas/systemInfoNextTip.jsp</result>
+            <result name="systemInfoMain">/api_tppas/systemInfo.jsp</result>
+            <result name="systemMainNext">/api_tppas/systemInfoNext.jsp</result>
+            <result name="uploadSuccess">/api_tppas/target_upload.jsp</result>
+            <result name="systemInfoIframe">/api_tppas/systemInfoIframe.jsp</result>
+            <result name="checkFileSize">/api_tppas/checkUploadSize.jsp</result>
+		</global-results>
+
+	</package>
+	
+	<!-- 权限验证过滤 
+	<package name="authlimit" extends="basePackage" namespace="/">
+		<interceptors>
+			<interceptor name="authlimit" class="com.hopsun.scenter.util.AuthFilter"/>
+			<interceptor-stack name="authlimit">
+			    <interceptor-ref name="checkauth"/>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="authlimit"/>
+	</package>
+	-->
+	
+	<!-- 用户登陆 -->
+    <include file="config/struts/scenter/api/struts-*"></include>
+    <include file="config/struts/subgroups/struts-*"></include>
+    <include file="config/struts/tppas/api/struts-*"></include>
+</struts>

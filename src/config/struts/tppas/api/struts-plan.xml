@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 项目验收 -->
+	<package name="plan" extends="admin" namespace="/api/plan">
+		<!-- 项目审核 -->
+        <action name="plan" class="com.hopsun.tppas.api.report.action.TplanAction">
+        	<result name="showPlanManage">/api_tppas/plan/plan_management.jsp</result>
+        	<result name="getPlanList">/api_tppas/plan/plan_list.jsp</result>
+        	<result name="showplandetaillist">/api_tppas/plan/plan_showplan_list.jsp</result>
+        	
+        	<!-- <result name="getAuditExpertList">/api_tppas/plan/audit_expert_list.jsp</result>
+        	<result name="showCreateGroup">/api_tppas/plan/group_insert_manage.jsp</result>
+        	<result name="showGroupSelectProjectManage">/api_tppas/plan/group_select_manage.jsp</result>
+        	<result name="getGroupSelectProjectList">/api_tppas/plan/group_select_list.jsp</result> -->
+        	 <result name="getDataSuccess" type="json">
+    			<param name="includeProperties">groupId</param>
+   			</result>
+        </action>
+
+	</package>
+</struts>

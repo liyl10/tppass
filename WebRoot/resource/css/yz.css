@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 正常情况提示 */
+.info {
+				margin-left: 8px;
+				padding: 0 20px 0 10px;
+				color: #999;
+				float: left;
+				position: relative;
+				display: none;
+				line-height: 20px;
+				background: #FEF5E0;
+				font-size: 12px;
+			}
+/* 当前提示 */
+.custom_checktip{color: #999;position:absolute;z-indet:99;margin-left:10px;height:25px;line-height:25px;}
+.Validform_checktip{color: #999;position:absolute;z-indet:99;margin-left:10px;height:25px;line-height:25px;}
+/* 输入错误提示 */
+.Validform_wrong{ background:url(../../resource/images/admin/icon_w.jpg) no-repeat left center; padding-left:20px; color:#f00; height:25px; line-height:25px;position:absolute;z-indet:99;margin-left:10px;}
+/* 输入正确提示 */
+.Validform_right{ background:url(../../resource/images/admin/icon_r.jpg) no-repeat left center; padding-left:20px; color:#71B83D;position:absolute;z-indet:99;margin-left:10px;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{border:1px solid #439CE0;background-color:#FEF5E0;}

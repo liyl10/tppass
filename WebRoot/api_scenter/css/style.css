@@ -1,0 +1,56 @@
+/* CSS Document */
+body {
+	background: url(../images/login/login_body_bg.gif) repeat-x;
+}
+
+.xdzinfo_login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 489px;
+	height: 309px;
+	margin: -154px 0 0 -245px;
+	font-size: 12px;
+	background: #fff url(../images/login/login_bg.gif) no-repeat;
+}
+
+.xdzinfo_login .add {
+	margin: 0 auto;
+	padding-top: 134px;
+	width: 320px;
+	text-align: center;
+}
+
+.xdzinfo_login .add li {
+	width:310px;
+	list-style: none;
+	height: 36px;
+	line-height: 36px;
+	text-align: left;
+}
+
+.xdzinfo_login .add img{ position:absolute; bottom:74px;}
+
+.xdzinfo_login .add .input {
+	margin: 0 6px;
+	padding: 0 6px;
+	height: 20px;
+	line-height: 20px;
+	width: 160px;
+	border: 1px solid #dedede;
+	color: #999;
+}
+
+.xdzinfo_login .btn {
+	margin: 6px auto;
+	padding: 0;
+	background: url(../images/login/login_btn.gif) no-repeat;
+	width: 110px;
+	height: 28px;
+	text-align: center;
+	text-indent: 16px;
+	line-height: 32px;
+	border-style: none;
+	color: #000;
+	font-weight: bold;
+}

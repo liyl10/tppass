@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- 
+@comment 系统参数Struts配置文件
+@author zzze
+@date Dec 27, 2012
+@version 1.0
+ -->
+<struts>
+	<package name="config" extends="admin" namespace="/api/config">
+    	<action name="config_*" class="com.hopsun.subgroups.paramconfig.action.ConfigAction"  method="{1}">
+       	 	<result name="{1}">/subgroups/config/jsp/config_{1}.jsp</result>
+       	 	<result name="goInsert">/subgroups/config/jsp/config_insert.jsp</result>
+       	 	<result name="goModify">/subgroups/config/jsp/config_modify.jsp</result>
+       	 	<result name="goDetail">/subgroups/config/jsp/config_detail.jsp</result>
+       	 	<result type="redirect">/api/config/config_list.action</result>
+    	</action>
+	</package>
+	<package name="ajaxconfig" extends="json-default" namespace="/api/ajaxconfig">
+    	<action name="config_*" class="com.hopsun.subgroups.paramconfig.action.ConfigAction"  method="{1}">
+    	</action>
+	</package>
+</struts>

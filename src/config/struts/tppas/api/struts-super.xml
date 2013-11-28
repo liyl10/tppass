@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 参数设置 -->
+	<package name="super" extends="admin" namespace="/api/superadmin">
+		<action name="mitem" class="com.hopsun.tppas.api.superadmin.action.MitemAction">
+			<result name="initMitem">/api_tppas/super/service_manager.jsp</result>
+			<result name="initOtherList">/api_tppas/super/otherItem_list.jsp</result>
+			<result name="initAddOtherSetting">/api_tppas/super/otherItem_insert.jsp</result>
+			<result name="initContractSetting">/api_tppas/super/systemSetting.jsp</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+		</action>
+		<!-- Mtype画面迁移 -->
+		<action name="mtype" class="com.hopsun.tppas.api.superadmin.action.MtypeAction">
+			<result name="initTypeSetting">/api_tppas/super/type_search.jsp</result>
+			<result name="queryType">/api_tppas/super/type_list.jsp</result>
+			<result name="initTypeEditPage">/api_tppas/super/type_update.jsp</result>
+			<result name="initMitem">/api_tppas/super/service_manager.jsp</result>
+			<result name="initOtherSetting">/api_tppas/super/otherItemSetting.jsp</result>
+		</action>
+		<!-- 控制画面迁移 -->
+		<action name="jumpTo" class="com.hopsun.tppas.api.superadmin.action.ContorlJumpAction">
+			<result name="jump">/api_tppas/mainService.jsp</result>
+		</action>
+		<!-- 控制画面迁移 -->
+		<action name="reportModel" class="com.hopsun.tppas.api.superadmin.action.TprojectReportTemplateAction">
+			<result name="init">/api_tppas/super/projectModelSearch.jsp</result>
+			<result name="list">/api_tppas/super/projectModel_list.jsp</result>
+			<result name="insert">/api_tppas/super/projectModel_insert.jsp</result>
+			<result name="modify">/api_tppas/super/projectModelSearch.jsp</result>
+			<result name="delete">/api_tppas/super/projectModelSearch.jsp</result>
+		</action>
+		<action name="contractModel" class="com.hopsun.tppas.api.superadmin.action.TprojectContractTemplateAction">
+			<result name="init">/api_tppas/super/contractModelSearch.jsp</result>
+			<result name="list">/api_tppas/super/contractModel_list.jsp</result>
+			<result name="insert">/api_tppas/super/contractModel_insert.jsp</result>
+			<result name="modify">/api_tppas/super/contractModelSearch.jsp</result>
+			<result name="delete">/api_tppas/super/contractModelSearch.jsp</result>
+		</action>
+		<action name="supervisorModel" class="com.hopsun.tppas.api.superadmin.action.TprojectSupervisionTemplateAction">
+			<result name="init">/api_tppas/super/supervisorModelSearch.jsp</result>
+			<result name="list">/api_tppas/super/supervisorModel_list.jsp</result>
+			<result name="insert">/api_tppas/super/supervisorModel_insert.jsp</result>
+			<result name="modify">/api_tppas/super/supervisorModelSearch.jsp</result>
+			<result name="delete">/api_tppas/super/supervisorModelSearch.jsp</result>
+		</action>
+		<action name="acceptanceModel" class="com.hopsun.tppas.api.superadmin.action.TprojectAcceptanceTemplateAction">
+			<result name="init">/api_tppas/super/acceptanceModelSearch.jsp</result>
+			<result name="list">/api_tppas/super/acceptanceModel_list.jsp</result>
+			<result name="insert">/api_tppas/super/acceptanceModel_insert.jsp</result>
+			<result name="modify">/api_tppas/super/acceptanceModelSearch.jsp</result>
+			<result name="delete">/api_tppas/super/acceptanceModelSearch.jsp</result>
+		</action>
+		<action name="typeModel" class="com.hopsun.tppas.api.superadmin.action.TprojectTypeAction">
+			<result name="init">/api_tppas/super/typeModelSearch.jsp</result>
+			<result name="list">/api_tppas/super/typeModel_list.jsp</result>
+			<result name="insert">/api_tppas/super/typeModel_insert.jsp</result>
+			<result name="modify">/api_tppas/super/typeModelSearch.jsp</result>
+			<result name="delete">/api_tppas/super/typeModelSearch.jsp</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+		</action>
+		<action name="tattachment" class="com.hopsun.tppas.api.superadmin.action.TattachmentAction">
+			<!-- <result name="uploadSuccess">/server_xapdpms/acceptance/target_upload.jsp</result> -->
+		</action>
+		<action name="ajaxMessageNotice" class="com.hopsun.tppas.api.superadmin.action.TmessageReceiveAction" method="ajaxMessageNotice">
+			<result type="json"></result>
+		</action>
+		<action name="worddocDownload" class="com.hopsun.tppas.api.superadmin.action.WorddocDownloadAction">
+		</action>
+		<!-- 计划类别分配专员 -->
+		<action name="tprojectTypeManagerAction" class="com.hopsun.tppas.api.superadmin.action.TprojectTypeManagerAction">
+			<result name="typeAssign">/api_tppas/super/type_assign.jsp</result>
+		</action>
+		<!-- 新增专家模板 -->
+		<action name="texpertreviewcommentsaction" class="com.hopsun.tppas.api.superadmin.action.TexpertReviewCommentsAction">
+			<result name="list">/api_tppas/super/expert_review_list.jsp</result>
+			<result name="insert">/api_tppas/super/expert_review_comments_insert.jsp</result>
+			<result name="modify">/api_tppas/super/expert_review_comments_modify.jsp</result>
+			<result name="copyexpertreview">/api_tppas/super/expert_review_comments_copy.jsp</result>
+			
+			<result name="operateExpertScoreByGroupList">/api_tppas/joint/expert_review_list.jsp</result>
+			<result name="jointinsert">/api_tppas/joint/expert_review_comments_insert.jsp</result>
+			<result name="jointmodify">/api_tppas/joint/expert_review_comments_modify.jsp</result>
+			<result name="jointcopyexpertreview">/api_tppas/joint/expert_review_comments_copy.jsp</result>
+			
+			<result name="getDataSuccess" type="json">
+    			<param name="includeProperties">backStr</param>
+   			</result>
+		</action>
+		
+	</package>
+</struts>

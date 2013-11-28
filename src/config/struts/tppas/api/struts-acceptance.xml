@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 项目验收 -->
+	<package name="acceptance" extends="admin" namespace="/api/acceptance">
+		<!-- 项目验收 -->
+		<action name="acceptance" class="com.hopsun.tppas.api.acceptance.action.TacceptanceAction">
+			<result name="init">/api_tppas/acceptance/acceptance_search.jsp</result>
+			<result name="resultList">/api_tppas/acceptance/acceptance_list.jsp</result>
+			<!-- 高新处 -->
+            <result name="highTechInit">/api_tppas/acceptance/highTech/acceptance_a_menu.jsp</result>
+            <result name="highTechCover">/api_tppas/acceptance/highTech/acceptance_a_cover.jsp</result>
+            <result name="highTechIndex">/api_tppas/acceptance/highTech/acceptance_a_index_list.jsp</result>
+            <!-- 高新处提交 -->
+            <result name="highTechSubmit">/api_tppas/acceptance/highTech/acceptance_a_submit.jsp</result>
+            <!-- 非高新处 -->
+            <result name="otherInit">/api_tppas/acceptance/other/acceptance_b_menu.jsp</result>
+            <result name="showAcceptanceinfoB">/api_tppas/acceptance/other/acceptance_b_info.jsp</result>
+        	<!-- 非高新处附件列表 -->
+        	<result name="showIndexList">/api_tppas/acceptance/other/acceptance_b_index_list.jsp</result>
+           	<!-- 非高新提交 -->
+           	<result name="otherAcceptanceSubmit">/api_tppas/acceptance/other/acceptance_b_submit.jsp</result>
+        </action>
+        <!-- 项目经费落实和使用情况（高新处） -->
+        <action name="implementationA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceImplementationAAction">
+            <result name="infoInit">/api_tppas/acceptance/highTech/acceptance_a_info.jsp</result>
+        </action>
+        <!-- 对照合同项目任务完成情况（高新处） -->
+        <action name="completeA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceCompleteAAction">
+            <result name="completeInit">/api_tppas/acceptance/highTech/acceptance_a_complete.jsp</result>
+        </action>
+        <!-- 企业获得资金支持情况（高新处） -->
+        <action name="fundsA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceFundsAAction">
+            <result name="fundsInit">/api_tppas/acceptance/highTech/acceptance_a_funds.jsp</result>
+        </action>
+        <!-- 企业发展情况（高新处） -->
+        <action name="developingA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceDevelopingAAction">
+            <result name="developingInit">/api_tppas/acceptance/highTech/acceptance_a_developing.jsp</result>
+        </action>
+        <!-- 验收意见（高新处） -->
+        <action name="opinionA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceOpinionAAction">
+            <result name="accOpinionInit">/api_tppas/acceptance/highTech/acceptance_a_acc_opinion.jsp</result>
+            <result name="deptOpinionInit">/api_tppas/acceptance/highTech/acceptance_a_dept_opinion.jsp</result>
+        </action>
+        <!-- 项目主要参加人员名单（高新处） -->
+        <action name="mainA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceMainAAction">
+            <result name="mainInit">/api_tppas/acceptance/highTech/acceptance_a_main_list.jsp</result>
+            <result name="mainUpdateInit">/api_tppas/acceptance/highTech/acceptance_a_main_modify.jsp</result>
+        </action>
+        <!-- 验收小组名单（高新处） -->
+        <action name="accA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceAccAAction">
+            <result name="accInit">/api_tppas/acceptance/highTech/acceptance_a_acc_list.jsp</result>
+            <result name="accUpdateInit">/api_tppas/acceptance/highTech/acceptance_a_acc_modify.jsp</result>
+        </action>
+        <!-- 项目验收经费登记表（高新处） -->
+        <action name="accFundsA" class="com.hopsun.tppas.api.acceptance.action.TacceptanceAccFundsAAction">
+            <result name="accFundsInit">/api_tppas/acceptance/highTech/acceptance_a_acc_funds.jsp</result>
+        </action>
+        <!-- 项目经费落实和使用情况（非高新处） -->
+        <action name="TacceptanceImplementationBAction" class="com.hopsun.tppas.api.acceptance.action.TacceptanceImplementationBAction">
+        	<result name="tacceptanceImplementationB">/api_tppas/acceptance/other/acceptance_b_implementation.jsp</result>
+       	    <result name="othermenu">/api_tppas/acceptance/other/acceptance_b_menu.jsp</result>
+        </action>
+        <!-- 项目取得成果情况（非高新处）  -->
+        <action name="TacceptanceAchievementBAction" class="com.hopsun.tppas.api.acceptance.action.TacceptanceAchievementBAction">
+        	<result name="ShowAchievementB">/api_tppas/acceptance/other/acceptance_b_achievement.jsp</result>
+        </action>
+        <!-- 项目总结说明（非高新处）  -->
+        <action name="TacceptanceSummaryBAction" class="com.hopsun.tppas.api.acceptance.action.TacceptanceSummaryBAction">
+        	<result name="showAcceptanceSummaryB">/api_tppas/acceptance/other/acceptance_b_summary.jsp</result>
+        </action>
+	</package>
+</struts>

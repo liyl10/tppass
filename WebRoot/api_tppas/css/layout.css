@@ -1,0 +1,4 @@
+#container {margin:0 auto; width:100%;}
+#mainContent {  overflow:auto;zoom:1; margin-bottom:5px;}
+#content { margin-left:230px !important; margin-left:202px; height:auto !important; height:300px;}
+.clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}

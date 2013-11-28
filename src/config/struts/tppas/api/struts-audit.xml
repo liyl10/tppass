@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+		<!-- 项目验收 2 -->
+	<package name="audit2" extends="basePackage" namespace="/audit2">
+		<!-- 项目审核 -->
+        <action name="projectApplication" class="com.hopsun.tppas.api.report.action.TprojectApplicationAuditAction">
+        	<result name="showAuditExpertManage">/api_tppas/auditExpertSelect/audit_expert_manage.jsp</result>
+        	<result name="getAuditExpertList">/api_tppas/auditExpertSelect/audit_expert_list.jsp</result>
+        	<result name="showGroupSelectProjectManage">/api_tppas/auditExpertSelect/group_select_manage.jsp</result>
+        	<result name="getGroupSelectProjectList">/api_tppas/auditExpertSelect/group_select_list.jsp</result>
+        	 <result name="getDataSuccess" type="json">
+    			<param name="includeProperties">backStr</param>
+   			</result>
+        	<result name="getGroupSelectedProjectList">/api_tppas/auditExpertSelect/group_selected_list.jsp</result>
+        	<result name="showGroupList">/api_tppas/auditExpertSelect/change_group.jsp</result>
+        	<result name="showCreateGroup">/api_tppas/auditExpertSelect/group_insert_manage.jsp</result>
+        	<!-- 编辑分组 -->
+        	<result name="editGroup">/api_tppas/auditExpertSelect/group_edit.jsp</result>
+        	
+        	<result name="showBatchSelectExpert">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<!-- 专家列表 -->
+        	<result name="getSelectedList">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<!-- <result name="getSelectedList">/api_tppas/audit/expert_list.jsp</result> -->
+        	<result name="showExpertSelected">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<result name="showAuditSelectExpertManage">/api_tppas/audit/select_audit_expert_manage.jsp</result>
+        	<result name="getAddAuditList">/api_tppas/audit/select_audit_expert_list.jsp</result>
+        	<result name="showAuditInsertExpert">/api_tppas/audit/audit_expert_insert.jsp</result>
+        	
+        	
+        	<!-- 分割线 -->
+        	<result name="auditManage">/api_tppas/audit/audit_management.jsp</result>
+        	<result name="auditResultList">/api_tppas/audit/audit_list.jsp</result>
+        	<result name="selectedExpertManage">/api_tppas/audit/select_expert_manage.jsp</result>
+        	
+        	<result name="auditPropressManage">/api_tppas/audit/audit_progress_manage.jsp</result>
+        	<result name="auditProgressList">/api_tppas/audit/audit_progress_list.jsp</result>
+        	<result name="showOpinions">/api_tppas/audit/fill_opinions.jsp</result>
+        	
+        	<result name="showSendMessasePage">/api_tppas/audit/send_message.jsp</result>
+        </action>
+	</package>
+	
+	<!-- 项目验收 -->
+	<package name="audit" extends="admin" namespace="/api/audit">
+		<!-- 项目审核 -->
+        <action name="projectApplication" class="com.hopsun.tppas.api.report.action.TprojectApplicationAuditAction">
+        	<result name="showAuditExpertManage">/api_tppas/auditExpertSelect/audit_expert_manage.jsp</result>
+        	<result name="getAuditExpertList">/api_tppas/auditExpertSelect/audit_expert_list.jsp</result>
+        	<result name="showGroupSelectProjectManage">/api_tppas/auditExpertSelect/group_select_manage.jsp</result>
+        	<result name="getGroupSelectProjectList">/api_tppas/auditExpertSelect/group_select_list.jsp</result>
+        	 <result name="getDataSuccess" type="json">
+    			<param name="includeProperties">backStr</param>
+   			</result>
+        	<result name="getGroupSelectedProjectList">/api_tppas/auditExpertSelect/group_selected_list.jsp</result>
+        	<result name="showGroupList">/api_tppas/auditExpertSelect/change_group.jsp</result>
+        	<result name="showCreateGroup">/api_tppas/auditExpertSelect/group_insert_manage.jsp</result>
+        	<!-- 编辑分组 -->
+        	<result name="editGroup">/api_tppas/auditExpertSelect/group_edit.jsp</result>
+        	
+        	<result name="showBatchSelectExpert">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<!-- 专家列表 -->
+        	<result name="getSelectedList">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<!-- <result name="getSelectedList">/api_tppas/audit/expert_list.jsp</result> -->
+        	<result name="showExpertSelected">/api_tppas/audit/select_expert_manage.jsp</result>
+        	<result name="showAuditSelectExpertManage">/api_tppas/audit/select_audit_expert_manage.jsp</result>
+        	<result name="getAddAuditList">/api_tppas/audit/select_audit_expert_list.jsp</result>
+        	<result name="showAuditInsertExpert">/api_tppas/audit/audit_expert_insert.jsp</result>
+        	
+        	
+        	<!-- 分割线 -->
+        	<result name="auditManage">/api_tppas/audit/audit_management.jsp</result>
+        	<result name="auditResultList">/api_tppas/audit/audit_list.jsp</result>
+        	<result name="selectedExpertManage">/api_tppas/audit/select_expert_manage.jsp</result>
+        	
+        	<result name="auditPropressManage">/api_tppas/audit/audit_progress_manage.jsp</result>
+        	<result name="auditProgressList">/api_tppas/audit/audit_progress_list.jsp</result>
+        	<result name="showOpinions">/api_tppas/audit/fill_opinions.jsp</result>
+        	
+        	<result name="showSendMessasePage">/api_tppas/audit/send_message.jsp</result>
+        </action>
+        <!-- 专家评分 -->
+        <action name="texpertScore" class="com.hopsun.tppas.api.expert.action.TexpertScoreAction">
+        	<result name="updateProgress">/api_tppas/audit/expert_score.jsp</result>
+        </action>
+        <action name="projectApplicationJoint" class="com.hopsun.tppas.api.report.action.TprojectApplicationJointAction">
+        	<result name="showJointAuditManage">/api_tppas/joint/audit_joint_manage.jsp</result>
+        	<result name="getJointAuditList">/api_tppas/joint/audit_joint_list.jsp</result>
+        	<result name="showBatchJointAudit">/api_tppas/joint/batch_joint_insert.jsp</result>
+        	<result name="showJointAudit">/api_tppas/joint/audit_joint_insert.jsp</result>
+        	<result name="showSendMessage">/api_tppas/joint/select_expert_manage.jsp</result>
+        	<result name="getSelectedList">/api_tppas/joint/select_expert_list.jsp</result>
+        	<result name="showSendMessasePage">/api_tppas/joint/send_message.jsp</result>
+        	<result name="infoContent" type="json">
+				<param name="includeProperties">infoContent</param>
+			</result>
+			<result name="showHighEndInput">/api_tppas/joint/high_end_input.jsp</result>
+        </action>
+        <!-- 立项建议 -->
+        <action name="projectApplicationProposals" class="com.hopsun.tppas.api.report.action.ProjectApplicationProposalsAction">
+        	<result name="showProposalsManage">/api_tppas/joint/project_proposals_manage.jsp</result>
+			<result name="showProposalsList">/api_tppas/joint/project_proposals_list.jsp</result>
+			<result name="showOtherComments">/api_tppas/joint/other_comments.jsp</result>
+        </action>
+        <action name="projectApplicationOffice" class="com.hopsun.tppas.api.report.action.TprojectApplicationOfficeAction">
+        	<result name="showOfficeAuditManage">/api_tppas/office/audit_office_manage.jsp</result>
+        	<result name="getOfficeAuditList">/api_tppas/office/audit_office_list.jsp</result>
+        	<result name="showBatchOfficeAudit">/api_tppas/office/batch_office_insert.jsp</result>
+        	<result name="showDetail">/api_tppas/office/office_detail.jsp</result>
+        </action>
+	</package>
+</struts>

@@ -1,0 +1,343 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff; MARGIN: 0px; FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+A.a1:link {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #646464; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+A.a1:visited {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #646464; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+A.a1:hover {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #333333; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+A.a1:active {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #646464; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+.black12 {
+	LINE-HEIGHT: 22px; FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.white12 {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a2:link {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a2:visited {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a2:hover {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A.a2:active {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.table {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: "ËÎÌå"; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid; TEXT-DECORATION: none
+}
+.table2 {
+	BORDER-BOTTOM: #333333 1px solid; BORDER-LEFT: #333333 1px solid; BACKGROUND-COLOR: #f9f9f7; FONT-FAMILY: "ËÎÌå"; COLOR: #333333; FONT-SIZE: 12px; BORDER-TOP: #333333 1px solid; BORDER-RIGHT: #333333 1px solid; TEXT-DECORATION: none
+}
+.gray12 {
+	LINE-HEIGHT: 17px; FONT-FAMILY: "ËÎÌå"; COLOR: #666666; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a3:link {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #6c6a4a; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a3:visited {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #6c6a4a; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a3:hover {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A.a3:active {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #6c6a4a; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.title {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #339900; FONT-SIZE: 14px; FONT-WEIGHT: bolder; TEXT-DECORATION: none
+}
+.red1 {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå¨¬?"; COLOR: #ff6600; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.eblack {
+	LINE-HEIGHT: 16px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+A.a5:link {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a5:visited {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a5:hover {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #999999; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a5:active {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a6:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #2686c2; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a6:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #2686c2; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a6:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A.a6:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #2686c2; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.white11 {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.eblack10 {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.eblack12 {
+	LINE-HEIGHT: 15px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: #666666; FONT-SIZE: 11px; FONT-WEIGHT: bolder; TEXT-DECORATION: none
+}
+.title2 {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå"; COLOR: #3d3d3d; FONT-SIZE: 13px; FONT-WEIGHT: bolder; TEXT-DECORATION: none
+}
+.whiteb {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #ffffff; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.RED {
+	TEXT-ALIGN: left; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #0b6ba6; FONT-SIZE: 18px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.red2 {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #d9190e; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.gray {
+	LINE-HEIGHT: 18px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #494949; FONT-SIZE: 12px; FONT-WEIGHT: lighter; TEXT-DECORATION: none
+}
+A.a7:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a7:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a7:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+A.a7:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+.black16 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.a8:link {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #d0100f; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.a8:visited {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #d0100f; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.a8:hover {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #d0100f; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+A.a8:active {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #d0100f; FONT-SIZE: 13px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.a9:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #637e49; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.a9:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #637e49; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.a9:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+A.a9:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #637e49; FONT-SIZE: 12px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+TABLE {
+	FONT-FAMILY: "ËÎÌå"; FONT-SIZE: 12px
+}
+.gray3 {
+	TEXT-ALIGN: left; PADDING-RIGHT: 10px; FONT-FAMILY: "ËÎÌå"; COLOR: #999999; TEXT-DECORATION: none
+}
+.black14 {
+	FONT-FAMILY: "ËÎÌå"; COLOR: #666666; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+A.a10:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a10:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a10:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+A.a10:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+.blue {
+	LINE-HEIGHT: 22px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #1a82bb; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.line {
+	BORDER-BOTTOM: #999999 1px dotted; BORDER-LEFT: #999999 1px dotted; BORDER-TOP: #999999 1px dotted; BORDER-RIGHT: #999999 1px dotted
+}
+A.a4:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #2287d9; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A.a4:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #2287d9; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A.a4:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A.a4:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #2287d9; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.blue2 {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #5f7d8f; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+A:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.g1 {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 15px
+}
+.gray13 {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ", "ºÚÌå"; COLOR: #384354; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.g2 {
+	PADDING-BOTTOM: 9px; LINE-HEIGHT: 18px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none; PADDING-TOP: 9px
+}
+.gundong {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #583f14; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.red3 {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #513a06; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.black13 {
+	LINE-HEIGHT: 25px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #000000; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+.red4 {
+	LINE-HEIGHT: 22px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #d02c02; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.yh14 {
+	LINE-HEIGHT: 23px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #000000; FONT-SIZE: 14px; TEXT-DECORATION: none
+}
+A.a11:link {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a11:visited {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+A.a11:hover {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: underline
+}
+A.a11:active {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+.white13 {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #ffffff; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+.black {
+	LINE-HEIGHT: 16px; FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.yellow {
+	FONT-FAMILY: "ËÎÌå", "Î¢ÈíÑÅºÚ"; COLOR: #a6976f; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+TABLE {
+	FONT: 9pt Tahoma, Verdana;
+	COLOR: #000000;
+-x-system-font: none; 	font-size-adjust: none;
+	font-stretch: normal;
+	border: 1px solid #cce7fc;
+}
+INPUT {
+	BACKGROUND-COLOR: #f8f8f8; FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+SELECT {
+	BACKGROUND-COLOR: #f8f8f8; FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+TEXTAREA {
+	BACKGROUND-COLOR: #f8f8f8; FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+SELECT {
+	BACKGROUND-COLOR: #f8f8f8; FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.nav {
+	FONT: bold 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.nav A {
+	COLOR: #000000
+}
+.header {
+	BACKGROUND-COLOR: #8cbdef; FONT: bold 9pt Tahoma, Verdana; COLOR: #ffffff; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.header A {
+	COLOR: #ffffff
+}
+.category {
+	BACKGROUND-COLOR: #fcfcfc; FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.tableborder {
+	BORDER-BOTTOM: #8cbdef 1px solid; BORDER-LEFT: #8cbdef 1px solid; BACKGROUND: #cde2f8 0px 0px; BORDER-TOP: #8cbdef 1px solid; BORDER-RIGHT: #8cbdef 1px solid; -moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding
+}
+.singleborder {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 1px; BACKGROUND-COLOR: #f8f8f8; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 0px; PADDING-TOP: 0px
+}
+.smalltxt {
+	FONT: 9pt Tahoma, Verdana; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.outertxt {
+	FONT: 9pt Tahoma, Verdana; COLOR: #000000; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.outertxt A {
+	COLOR: #000000
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.epages {
+	MARGIN: 3px 0px; FONT: 11px/12px Tahoma; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.epages * {
+	VERTICAL-ALIGN: middle
+}
+.epages A {
+	BORDER-BOTTOM: #a6cbe7 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #a6cbe7 1px solid; PADDING-BOTTOM: 1px; MARGIN: 0px 1px 0px 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; FONT: 12px/14px verdana; BORDER-TOP: #a6cbe7 1px solid; BORDER-RIGHT: #a6cbe7 1px solid; TEXT-DECORATION: none; PADDING-TOP: 1px; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+.epages A:hover {
+	BORDER-BOTTOM: #659b28 1px solid; BORDER-LEFT: #659b28 1px solid; BACKGROUND: #f3f8ef 0px 0px; COLOR: #004c7d; BORDER-TOP: #659b28 1px solid; BORDER-RIGHT: #659b28 1px solid; TEXT-DECORATION: none; -moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding
+}
+.epages INPUT {
+	BORDER-BOTTOM: #659b28 1px solid; BORDER-LEFT: #659b28 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; FONT: bold 12px/15px Verdana; MARGIN-BOTTOM: 0px; HEIGHT: 15px; COLOR: #659b28; BORDER-TOP: #659b28 1px solid; MARGIN-RIGHT: 1px; BORDER-RIGHT: #659b28 1px solid; -x-system-font: none; font-size-adjust: none; font-stretch: normal
+}
+FORM {
+	MARGIN: 0px
+}
+
+
+
+
+
+
+html, body, ul, li {padding:0; margin:0;}
+body {font:12px/normal Verdana, Arial, Helvetica, sans-serif;}
+ul,li {list-style-type:none; text-transform:capitalize;}
+.clear {clear:both; *display:inline;/*IE only*/}
+
+/*menu*/
+#menu {display:block; width:1000px; height:34px;background:#3f240e;}
+#nav {display:block;}
+#nav .mainlevel {float:left; background:#3f240e; text-align:center; display:block;}
+#nav .mainlevel a {color:#fff; text-decoration:none; line-height:34px; height:34px; text-align:center; padding:0 14px; display:block; _width:48px;}
+#nav .mainlevel a:hover {color:#3f240e; text-decoration:none; background:#678900 url(../images/slide-pannel_14.png) 0 0 repeat-x;}
+#nav .mainlevel ul {position:absolute; display:none; *width:2000px;/*IE is great need, width>=li.length*/}
+#nav .mainlevel li {float:left; background:#3f240e;}
+#nav .mainlevel li a {padding:0 12px; line-height:24px; height:24px; display:block; _padding-bottom:6px;/*IE6 only*/}
+#nav .mainlevel li a:hover {color:#3f240e; text-decoration:none; background:#678900 url(../images/slide-pannel_14.png) 0 0 repeat-x;}
+#nav li a em/*input an em tag as a space*/ {padding:0 3px;}
+.note {font:8px;text-aglin:right;color:#3f240e; border-right:1px solid #fff; background:#678900 url(../images/slide-pannel_14.png) 0 0 repeat-x; display:block; line-height:34px; padding:0 3em;}
+.Triangle_con {height:9px; background:url(../images/bird.png) 30px 0 no-repeat; display:block; _margin-bottom:-6px;/*IE6 only*/}

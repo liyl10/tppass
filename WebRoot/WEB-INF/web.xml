@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.5"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>科技计划项目申报系统-业务处室</display-name>
+	<description>tppass</description>
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>webApp.root</param-value>
+	</context-param>
+
+	<!-- 定义Spring配置文件位置 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext*.xml</param-value>
+	</context-param>
+
+	<!-- 编码处理过滤器 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- SpringAOP中获取Request的拦截器，此配置需配置在CAS验证授权之前，否则项目中获取不到用户名 -->
+	<filter>
+		<display-name>RequestAdapterInterceptor</display-name>
+		<filter-name>RequestAdapterInterceptor</filter-name>
+		<filter-class>com.hopsun.subgroups.logs.filter.RequestAdapterInterceptor</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>RequestAdapterInterceptor</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 单点登录开始 -->
+	<!-- IE中iframe跨域丢失Session问题解决 -->
+	<!--<filter>
+		<filter-name>TransNameFilter</filter-name>
+		<filter-class>com.hopsun.tppas.api.util.TransNameFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TransNameFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<filter-class>org.jasig.cas.client.session.SingleSignOutFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CAS Single Sign Out Filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<filter-class>org.jasig.cas.client.authentication.AuthenticationFilter</filter-class>
+		<init-param>
+			<param-name>casServerLoginUrl</param-name>
+			<param-value>http://teisadmin2.xatrm.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://117.32.131.114:8880</param-value>
+		</init-param>
+		<init-param>
+			<param-name>renew</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>gateway</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>CAS Validation Filter</filter-name>
+		<filter-class>org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter</filter-class>
+		<init-param>
+			<param-name>casServerUrlPrefix</param-name>
+			<param-value>http://teisadmin2.xatrm.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>serverName</param-name>
+			<param-value>http://117.32.131.114:8880</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<filter-class>org.jasig.cas.client.util.HttpServletRequestWrapperFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<filter-class>org.jasig.cas.client.util.AssertionThreadLocalFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CAS Authentication Filter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CAS Validation Filter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CAS HttpServletRequest Wrapper Filter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>CAS Assertion Thread Local Filter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping> -->
+	<!-- 单点登录结束 -->
+
+	<!-- 解决Hibernate延迟加载问题过滤器，需放在struts2过滤器之前 -->
+	<filter>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+		<init-param>
+			<param-name>excludeSuffixs</param-name>
+			<param-value>js,css,jpg,gif,png,bmp,jpeg</param-value>
+		</init-param>
+	</filter>
+	<!-- Struts2过滤器 -->
+	<filter>
+		<filter-name>struts</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 初始化xfire -->
+	<servlet>
+		<servlet-name>xfireServlet</servlet-name>
+		<servlet-class>org.codehaus.xfire.spring.XFireSpringServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xfireServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<!-- 注意:需放在struts2过滤器filter-mapping之前 -->
+	<filter-mapping>
+		<filter-name>openSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>struts</filter-name>
+		<url-pattern>*.action</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+	</filter-mapping>
+
+	<!-- 对Spring容器进行实例化 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- Spring刷新Introspector防止内存泄露 -->
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	<!-- 监听session过期时清除session信息 -->
+	<listener>
+		<listener-class>com.hopsun.scenter.api.util.SessionCounter</listener-class>
+	</listener>
+	<!-- Session超时定义,单位为分钟 -->
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<!-- 系统配置文件启动加载进入缓存，该配置需放置在Spring监听器之后 -->
+	<listener>
+		<listener-class>com.hopsun.subgroups.paramconfig.filter.ServletListener</listener-class>
+	</listener>
+	<!-- 定义默认访问页 -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.action</welcome-file>
+	</welcome-file-list>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/api_tppas/404.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/api_tppas/500.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/api_tppas/500.jsp</location>
+	</error-page>
+</web-app>
+

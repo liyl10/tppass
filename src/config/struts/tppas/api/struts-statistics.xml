@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 统计页面 -->
+	<package name="statistics" extends="admin" namespace="/api/statistics">
+		<!-- 项目统计 -->
+		<action name="statisticsProject" class="com.hopsun.tppas.api.statistics.action.StatisticsProjectAction">
+			<result name="init">/api_tppas/statistics/statistics_project_search.jsp</result>
+			<result name="query">/api_tppas/statistics/statistics_project_list.jsp</result>
+			<result name="initExport">/api_tppas/statistics/statistics_project_export.jsp</result>
+		</action>
+		<!-- 项目结果汇总 -->
+		<action name="vprojectResultCollectAction" class="com.hopsun.tppas.api.statistics.action.VprojectResultCollectAction">
+			<result name="statisticsMenu">/api_tppas/statistics/statistics_menu.jsp</result>
+			<result name="showProjectSearch">/api_tppas/statistics/statistics_project_result_search.jsp</result>
+			<result name="showProjectList">/api_tppas/statistics/statistics_project_result_list.jsp</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+			<result name="checkExportDataNum" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+		</action>
+		<!-- 拨款单统计-->
+		<action name="fundsAction" class="com.hopsun.tppas.api.statistics.action.FundsAction">
+			<result name="init">/api_tppas/statistics/statistics_funds_management.jsp</result>
+			<result name="list">/api_tppas/statistics/statistics_funds_management_list.jsp</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+		</action>
+	</package>
+</struts>

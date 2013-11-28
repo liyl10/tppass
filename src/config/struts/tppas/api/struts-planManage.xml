@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 项目验收 -->
+	<package name="planManage" extends="admin" namespace="/api/planManage">
+		<!-- 项目审核 -->
+        <action name="planManageAction" class="com.hopsun.tppas.api.report.action.TplanManageAction">
+        	<result name="showPlanManage">/api_tppas/plan/planManage/plan_manage.jsp</result>
+        	<result name="getPlanManageList">/api_tppas/plan/planManage/plan_list.jsp</result>
+        	<result name="beforeCreatePlan">/api_tppas/plan/planManage/plan_select_type.jsp</result>
+        	<result name="showNewPlan">/api_tppas/plan/planManage/plan_insert.jsp</result>
+        	<result name="showSelectProject">/api_tppas/plan/planManage/select_project_manage.jsp</result>
+        	<result name="getProjectList">/api_tppas/plan/planManage/select_project_list.jsp</result>
+        	<result name="showPlanUpdate">/api_tppas/plan/planManage/plan_update.jsp</result>
+        	<result name="getPlanUpdateList">/api_tppas/plan/planManage/plan_list_update.jsp</result>
+        	<result name="getPlanUpdateList1">/api_tppas/plan/planManage/plan_list_detail.jsp</result>
+        	<result name="showSelectProjectManage">/api_tppas/plan/planManage/unselect_project_manage.jsp</result>
+        	<result name="getUnselectProject">/api_tppas/plan/planManage/unselect_project_list.jsp</result>
+        	<result name="showPlanDetail">/api_tppas/plan/planManage/plan_detail.jsp</result>
+        </action>
+	</package>
+</struts>

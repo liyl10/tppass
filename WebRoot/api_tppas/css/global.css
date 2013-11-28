@@ -1,0 +1,77 @@
+/*
+ * Description: 用于重置浏览器样式，公用类集合
+ * Date:        创建日期：2011.11.11
+ */
+/* basic */
+html{ color:#333; background:#fff;}
+body{ font:12px/1.5 STSong tahoma,arial,\5b8b\4f53;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+address,caption,cite,code,dfn,em,th,var,optgroup{ font-style:inherit; font-weight:inherit;}
+em{ font-style:normal;}
+/* h1-h6 */
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+/* table */
+table{ border-collapse:collapse; border-spacing:0;}
+caption{ text-align:left;}
+th{ text-align:center;}
+/* form */
+legend{ font-weight:bold; font-size:1.2em; color:#404040; background:#fff;}
+fieldset{ border:none; padding:1.4em; margin:0 0 1.5em 0; border:1px solid #ccc;}
+input, button, textarea, select, optgroup, option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input, button, textarea, select{*font-size:100%;}
+input, select{padding-left:2px; vertical-align:middle;}
+input::-moz-focus-inner{ border:0; padding:0; margin:0; }
+select{ background:#fff;}
+textarea{padding:3px;}
+input{ outline:none;}
+/* other */
+q:before, q:after{ content:'';}
+pre, code, kbd, samp, tt{ font-family:'Courier New',Courier,monospace;}
+fieldset, img{ border:0;}
+img{ vertical-align:middle; -ms-interpolation-mode:bicubic; /*IE7私有属性,解决缩放失真*/}
+a img{ border:0;}
+li{ list-style:none;}
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+ins{ text-decoration:none;}
+del{ text-decoration:line-through;}
+small{ font-size:100%;}
+abbr, acronym{ border:none; font-variant:normal; border-bottom:1px dotted; cursor:help;}
+hr{ color:#d1d7dc; background-color:#d1d7dc; border:none; height:1px;}
+/* a */
+a{ color:#4b7caf; text-decoration:none; cursor:pointer;}
+a, a:active, a:focus{ outline:none;}
+a:hover{ text-decoration:underline;}
+/* mouse */
+.cp{ cursor:pointer;}
+.cm{ cursor:move;}
+.ct{ cursor:text;}
+.ch{ cursor:help;}
+/* float hide */
+.fl{ float:left;}
+.fr{ float:right;}
+.oh{ overflow:hidden;}
+.oa{ overflow:auto;}
+.os{ overflow:scroll;}
+.dn{ display:none;}
+.db{ display:block;}
+.di{ display:inline;}
+.fb{ font-weight:bold;}
+.re{ position:relative;}
+/* S 清除浮动 */
+/* 01使用空标签加class清除浮动 */
+.clear{ clear:both;}
+/* 02使用after伪对象清除浮动 Clear Fix */ 
+.clearfix:after{content:".";display:block;height:0;font-size:0;clear:both;visibility:hidden;}
+/* 文本溢出时显示省略标记(...) */
+.txtHide{word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis; /* opera */}
+/* for ie6 */
+.clearfix{ zoom:1; /* 或 height:1%;*/}
+/* Hide from IE Mac */ 
+.clearfix{ display:block;}
+/* E 清除浮动 */
+/* 密码控件 */
+.pwdControl {width: 235px;height: 24px;line-height: 24px;float: left;border:1px solid #C4CCD3;border-top:1px solid #C4CCD3;border-radius: 2px 2px 2px 2px;box-shadow: 1px 1px 1px #E3E3E3 inset;font-size: 14px;padding: 2px;margin-top: 5px;}
+.loginPwdControl {width: 163px;height: 24px;line-height: 24px;float: left;border:1px solid #C4CCD3;border-top:1px solid #C4CCD3;border-radius: 2px 2px 2px 2px;box-shadow: 1px 1px 1px #E3E3E3 inset;font-size: 14px;padding: 2px;}
+.modifyPwdControl {width: 180px;height: 24px;line-height: 24px;float: left;border:1px solid #C4CCD3;border-top:1px solid #C4CCD3;border-radius: 2px 2px 2px 2px;box-shadow: 1px 1px 1px #E3E3E3 inset;font-size: 14px;padding: 2px;}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 中期监理 -->
+	<package name="supervisor" extends="admin" namespace="/api/supervisor">
+		<!-- 项目监理 -->
+		<action name="tsupervisorAction" class="com.hopsun.tppas.api.supervisor.action.TsupervisorAction">
+			<result name="supervisorManager">/api_tppas/supervisor/supervisor_manager.jsp</result>
+			<result name="supervisorList">/api_tppas/supervisor/supervisor_list.jsp</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+		</action>
+		<!-- 监理报告 -->
+		<action name="supervisorReportAction" class="com.hopsun.tppas.api.supervisor.action.TsupervisorReportAction">
+			<result name="reportList">/api_tppas/supervisor/supervisorReport_list.jsp</result>
+			<result name="showReportInsert">/api_tppas/supervisor/supervisorReport_insert.jsp</result>
+			<result name="showReportDetail">/api_tppas/supervisor/supervisorReport_detail.jsp</result>
+			<result name="showReportModify">/api_tppas/supervisor/supervisorReport_modify.jsp</result>
+			<result name="showReportAudit">/api_tppas/supervisor/supervisorReport_audit.jsp</result>
+			
+		</action>
+		<!-- 监理点 -->
+		<action name="supervisorPointAction" class="com.hopsun.tppas.api.supervisor.action.TsupervisorPointAction">
+			<result name="forwardInsert">/api_tppas/supervisor/supervisorPoint_insert.jsp</result>
+			<result name="forwardUpdate">/api_tppas/supervisor/supervisorPoint_modify.jsp</result>
+		</action>
+		<!--其他处室监理申请 -->
+		<action name="supervisorOtherAction" class="com.hopsun.tppas.api.supervisor.action.TsupervisorOtherAction">
+			<result name="otherManager">/api_tppas/supervisor/other/supervisor_manager.jsp</result>
+			<result name="coverInfo">/api_tppas/supervisor/other/supervisor_cover.jsp</result>
+			<result name="commentInfo">/api_tppas/supervisor/other/supervisor_comment.jsp</result>
+			<result name="fundBInfo" type="redirect">/api/supervisor/supervisorFundBAction!getFundBInfo.action?supervisorId=${supervisorId}&amp;projectId=${projectId}&amp;isEdit=${isEdit}</result>
+			<result name="promiseInfo">/api_tppas/supervisor/other/supervisor_promise.jsp</result>
+			<result name="showIndexList">/api_tppas/supervisor/other/supervisor_index_list.jsp</result>
+        	<result name="showIndexInsert">/api_tppas/supervisor/other/supervisor_index_insert.jsp</result>
+           	<result name="showIndexUpdate">/api_tppas/supervisor/other/supervisor_index_update.jsp</result>
+           	<result name="showIndexNext" type="redirect">/api/supervisor/supervisorOtherAction!showIndexNext.action?supervisorId=${supervisorId}&amp;projectId=${projectId}&amp;isEdit=${isEdit}</result>
+           	<result name="submitList">/api_tppas/supervisor/other/supervisor_submit.jsp</result>
+		</action>
+		<!--资金情况B -->
+		<action name="supervisorFundBAction" class="com.hopsun.tppas.api.supervisor.action.TsupervisorFundBAction">
+			<result name="fundBInfo">/api_tppas/supervisor/other/supervisor_fund.jsp</result>
+		</action>
+		<!--对照合同项目任务完成情况 -->
+		<action name="projectCompleteInfoAction" class="com.hopsun.tppas.api.supervisor.action.TprojectCompleteInfoAction">
+			<result name="projectCompleteInfo">/api_tppas/supervisor/other/supervisor_contractinfo.jsp</result>
+		</action>
+		<!--项目取得成果情况 -->
+		<action name="projectAchievementInfoAction" class="com.hopsun.tppas.api.supervisor.action.TprojectAchievementInfoAction">
+			<result name="projectAchievementInfo">/api_tppas/supervisor/other/supervisor_achievement.jsp</result>
+		</action>
+		<!--项目产业化进展情况 -->
+		<action name="projectIndustrializationAction" class="com.hopsun.tppas.api.supervisor.action.TprojectIndustrializationAction">
+			<result name="projectIndustrialization">/api_tppas/supervisor/other/supervisor_progress.jsp</result>
+		</action>
+		<!--项目实施管理情况 -->
+		<action name="projectManagementInfoAction" class="com.hopsun.tppas.api.supervisor.action.TprojectManagementInfoAction">
+			<result name="projectManagementInfo">/api_tppas/supervisor/other/supervisor_implement.jsp</result>
+		</action>
+		<!--企业发展情况 -->
+		<action name="companyDevelopInfoAction" class="com.hopsun.tppas.api.supervisor.action.TcompanyDevelopInfoAction">
+			<result name="companyDevelopInfo">/api_tppas/supervisor/other/supervisor_companyinfo.jsp</result>
+		</action>
+		<!-- 产业处项目监理 -->
+		<action name="tsupervisorApply" class="com.hopsun.tppas.api.supervisor.action.TsupervisorApplyAction">
+			<!-- 监理申请  管理菜单-->
+			<result name="showApplyManager">/api_tppas/supervisor/highTech/supervisorApply_manager.jsp</result>
+			<!-- 监理申请  封面-->
+			<result name="showApplyFirstPage">/api_tppas/supervisor/highTech/supervisorApply_firstPage.jsp</result>
+			<!-- 监理申请  填表说明-->
+			<result name="showApplyInstruction">/api_tppas/supervisor/highTech/supervisorApply_instruction.jsp</result>
+			<!-- 监理申请  基本信息-->
+			<result name="showApplyInfo">/api_tppas/supervisor/highTech/supervisorApply_info.jsp</result>
+			<!-- 监理申请  基本信息保存处理-->
+			<result name="insertApplyInfo">/api_tppas/supervisor/highTech/supervisorApply_info.jsp</result>
+			<!-- 监理申请 资金情况-->
+			<result name="showApplyFund">/api_tppas/supervisor/highTech/supervisorApply_fund.jsp</result>
+			<!-- 监理申请 附件一览-->
+			<result name="showApplyAttachment">/api_tppas/supervisor/highTech/supervisorApply_attachment.jsp</result>
+			<!-- 监理申请 附件新增画面- -->
+			<result name="showAttachmentInsert">/api_tppas/supervisor/highTech/supervisorApply_attachment_insert.jsp</result>
+			<!-- 监理申请  提交-->
+			<result name="showApplySubmit">/api_tppas/supervisor/highTech/supervisorApply_submit.jsp</result>
+			<!-- 监理申请  附件更新-->
+			<result name="showIndexUpdate">/api_tppas/supervisor/highTech/supervisorApply_attachment_update.jsp</result>
+		</action>
+	</package>
+</struts>

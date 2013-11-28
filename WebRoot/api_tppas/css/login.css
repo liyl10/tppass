@@ -1,0 +1,81 @@
+* {margin:0;padding:0;list-style:none;}
+.ribbon{
+	background: url(../images/ribbon.jpg) repeat-x center;
+	text-align:right;
+	font-size:14px;
+	padding:5px 15px 5px 0;
+	/*width:1518px;*/
+}
+.bottom{
+	/*background: url(../images/ribbon.jpg) no-repeat center center;*/
+	text-align:center;
+	height: 40px; 
+	/*width:1518px;*/
+	padding: auto auto;
+	float: buttom
+}
+.bottom p {
+	font-size:14px;
+	text-align:center; 
+	line-height:30px;
+	background:#F7F7F7;
+	border-top:1px solid #E1E1E1;
+	color:#333;
+}
+table td{
+	padding-top: -30px;
+	padding-bottom: 10px;
+	padding-right: 2px;
+}
+.contents{
+	background: url(../images/main_bg.jpg) no-repeat center top;
+	text-align:center;
+	font-size:14px;
+	padding:5px 20px 5px 0;
+	height:566px;
+	position:relative;
+
+}
+
+.login{
+	background: url(../images/login_bg.jpg) no-repeat center;
+	text-align:center; 
+	width:360px;
+	height:270px;
+	margin:230px auto 0 auto;
+	position:relative;
+}
+.login1{
+	/*background: url(../images/login_bg1.gif) no-repeat center;*/
+	text-align:center; 
+	width:240px;
+	height:175px;
+	margin:230px auto 0 auto;
+	position:relative;
+}
+#userInfo{
+	padding: 50px 35px 0 20px;
+	font-size:15px;
+	text-align:left;
+	
+}
+.standInput{
+	width:220px;
+	height:30px;
+	 padding:5px 1px 1px; 
+}
+.img{
+	 /*  margin-bottom:4px ; */
+	
+
+}
+.checkText{
+	 margin-bottom:40px ;
+}
+.shoterInput{
+	width:134px;
+	height:30px;
+	  padding:5px 1px 1px; 
+	  /*  margin-bottom:4px ; */
+		
+}

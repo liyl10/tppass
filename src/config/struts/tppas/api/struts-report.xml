@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 项目申报 -->
+	<package name="report" extends="admin" namespace="/api/report">
+        <action name="waitThingItemAction" class="com.hopsun.tppas.api.report.action.WaitThingItemAction">
+           <result name="projectApplicationApplyState">/api_tppas/report/waitThingItem_list.jsp</result>
+        </action>
+        <action name="businsessWaitThingItemAction" class="com.hopsun.tppas.api.report.action.BusinsessWaitThingItemAction">
+         <result name="success">/api_tppas/report/businessWaitThingItem_list.jsp</result>
+        </action>
+        
+        <!-- 项目申报 -->
+         <action name="tprojectApplicationAction" class="com.hopsun.tppas.api.report.action.TprojectApplicationAction">
+        	<result name="list">/api_tppas/report/report_company_list.jsp</result>
+        	<result name="showProjectType">/api_tppas/report/project_type_select.jsp</result>
+        	<!-- 非高新 -->
+        	<result name="insertProject">/api_tppas/report/other/report_cover_insert.jsp</result>
+        	<!--<result name="showNonTechManage">/api_tppas/report/other/report_management_menu.jsp</result> -->
+        	<result name="showNonTechManage">/api_tppas/common/report_info_other.jsp</result>
+        	<result name="showUpdateNonTechCover">/api_tppas/report/other/report_cover_update.jsp</result>
+        	<result name="showReportNonTechKnow">/api_tppas/report/other/report_know_detail.jsp</result>
+        	<result name="showReportNotice">/api_tppas/report/other/report_notice_detail.jsp</result>
+        	<result name="showReportFlowOther">/api_tppas/report/other/report_flow_other.jsp</result>
+        	<!-- 高新 -->
+        	<!--<result name="showhightech">/api_tppas/report/highTech/report_menu.jsp</result>-->
+        	<result name="showhightech">/api_tppas/common/report_info_industry.jsp</result>
+        	<result name="showupdatehightech">/api_tppas/report/highTech/report_cover_update.jsp</result>
+        	<result name="showtupdatehightech">/api_tppas/report/highTech/report_cover_update.jsp</result>
+        	<result name="showreportknow">/api_tppas/report/highTech/report_know.jsp</result>
+        	<result name="showReportFlow">/api_tppas/report/highTech/report_flow.jsp</result>
+       		<!-- 附件上传 -->
+       		<result name="showIndexList">/api_tppas/report/report_index_list.jsp</result>
+           	<result name="showIndexUpdate">/api_tppas/report/report_index_update.jsp</result>
+           	<!-- 归档管理 -->
+           	<result name="showArchivalManage">/api_tppas/archival/archival_management.jsp</result>
+           	<result name="getarchivallist">/api_tppas/archival/archival_list.jsp</result>
+           	<!-- 项目评审通过率统计 -->
+           	<result name="showprojectviewmanage">/api_tppas/statistics/statistics_project_view_management.jsp</result>
+           	<result name="projectviewlist">/api_tppas/statistics/statistics_project_view_list.jsp</result>
+        
+        </action>
+        <!-- 高新项目基本信息 -->
+        <action name="tprojectInfoAction" class="com.hopsun.tppas.api.report.action.TprojectInfoAAction">
+        	<result name="showprojectinfo">/api_tppas/report/highTech/report_infor_insert.jsp</result>
+        </action>
+        <!-- 高新企业简介和发展前景 -->
+        <action name="tenterpriseProfilea" class="com.hopsun.tppas.api.report.action.TenterpriseProfileAAction">
+        	<result name="showfileInsert">/api_tppas/report/highTech/report_synopsis_insert.jsp</result>
+        </action>
+        <!-- 高新项目概况和市场分析 -->
+        <action name="tprojectOverviewa" class="com.hopsun.tppas.api.report.action.TprojectOverviewAAction">
+        	<result name="showfileInsert">/api_tppas/report/highTech/report_survey_insert.jsp</result>
+        </action>
+        <!-- 高新主要技术内容与技术创新点 -->
+        <action name="technicalContenta" class="com.hopsun.tppas.api.report.action.TtechnicalContentAAction">
+        	<result name="showfileInsert">/api_tppas/report/highTech/report_technique_insert.jsp</result>
+        </action>
+        <!-- 高新前期基础及现有条件和优势 -->
+        <action name="tcompanyFoundation" class="com.hopsun.tppas.api.report.action.TcompanyFoundationBAction">
+        	<result name="showhignfileInsert">/api_tppas/report/highTech/report_foundation_insert.jsp</result>
+        	<result name="showCompanyFoundationNonTech">/api_tppas/report/other/report_foundation_insert.jsp</result>
+        </action>
+        <!-- 高新进度安排经济指标-->
+        <action name="tschedulinga" class="com.hopsun.tppas.api.report.action.TschedulingAAction">
+        	<result name="showschedulinga">/api_tppas/report/highTech/report_scheduling_insert.jsp</result>
+        	<result name="showTschedulingANonTech">/api_tppas/report/other/report_scheduling_insert.jsp</result>
+        </action>
+       <!-- 高新处主要研究人员 -->
+       <action name="tresearcherActionA" class="com.hopsun.tppas.api.report.action.TresearcherAction">
+            <result name="researcherlist">/api_tppas/report/highTech/report_researcher_list.jsp</result>
+            <result name="showresearcher">/api_tppas/report/highTech/report_researcher_insert.jsp</result>
+       </action>
+       <!-- 项目基本信息（非高新） -->
+		<action name="tprojectInfobAction" class="com.hopsun.tppas.api.report.action.TprojectInfoBAction">
+        	<result name="showProjectInfoB">/api_tppas/report/other/report_info_update.jsp</result>
+        	<result name="getDataSuccess" type="json">
+    			<param name="includeProperties">backStr</param>
+   			</result>
+        </action>
+        <action name="treportAbstractBAction" class="com.hopsun.tppas.api.report.action.TreportAbstractBAction">
+        	<result name="showReportAbstractB">/api_tppas/report/other/report_abstract_insert.jsp</result>
+        </action>
+        <action name="tcompanyNeedBAction" class="com.hopsun.tppas.api.report.action.TcompanyNeedBAction">
+        	<result name="showCompanyNeedB">/api_tppas/report/other/report_company_need.jsp</result>
+        </action>
+       <!-- 项目完成的经济指标 -->
+       <action name="teconomicIndicatorBAction" class="com.hopsun.tppas.api.report.action.TeconomicIndicatorBAction">
+            <result name="initHighTech">/api_tppas/report/highTech/report_economicb_insert.jsp</result>
+            <result name="initOther">/api_tppas/report/other/report_economicb_insert.jsp</result>
+       </action>
+       <!-- 企业完成的经济指标 -->
+       <action name="teconomicIndicatorAAction" class="com.hopsun.tppas.api.report.action.TeconomicIndicatorAAction">
+            <result name="initHighTech">/api_tppas/report/highTech/report_economic_insert.jsp</result>
+            <result name="initOther">/api_tppas/report/other/report_economic_insert.jsp</result>
+       </action>
+        <!-- 企业项目基本信息表 -->
+        <action name="tcompanyInfoAction" class="com.hopsun.tppas.api.report.action.TcompanyInfoAction">
+            <result name="showCompanyInfo">/api_tppas/report/report_company_info.jsp</result>
+        </action>
+        <!-- 经费概算 -->
+        <action name="tcostEstimateBAction" class="com.hopsun.tppas.api.report.action.TcostEstimateBAction">
+            <result name="list">/api_tppas/report/report_cost_insert.jsp</result>
+        </action>
+        <!-- 非高新主要技术内容与技术创新点 -->
+        <action name="ttechnicalContentAAction" class="com.hopsun.tppas.api.report.action.TtechnicalContentAAction">
+        	<result name="showTechnicalNonTech">/api_tppas/report/other/report_technical_insert.jsp</result>
+        </action>
+        <!-- 资金主要用途及用款计划  -->
+        <action name="tfinancingUseAction" class="com.hopsun.tppas.api.report.action.TfinancingUseAction">
+        	<result name="showTfinancingUseNontech">/api_tppas/report/other/report_financing_use.jsp</result>
+        	<result name="showTfinancingUse">/api_tppas/report/highTech/report_financing_use.jsp</result>
+        </action>
+        <!-- 审查意见  -->
+        <action name="treviewCommentsAction" class="com.hopsun.tppas.api.report.action.TreviewCommentsAction">
+        	<result name="showTreviewCommentsNonTech">/api_tppas/report/other/report_objection_insert.jsp</result>
+        </action>
+        <!-- 非高新处主要研究人员 -->
+        <action name="tresearcherActionB" class="com.hopsun.tppas.api.report.action.TresearcherAction">
+            <result name="researcherlist">/api_tppas/report/other/report_researcher_list.jsp</result>
+            <result name="showresearcher">/api_tppas/report/other/report_researcher_insert.jsp</result>
+            <result name="showresearcherUP">/api_tppas/report/other/report_researcher_update.jsp</result>
+            <result name="showresearcherDE">/api_tppas/report/other/report_researcher_detail.jsp</result>
+            <result name="getDataSuccess" type="json">
+    			<param name="includeProperties">backStr</param>
+   			</result>
+        </action>
+        <!-- 取得企业用户信息 -->
+        <action name="companyInfoAction" class="com.hopsun.tppas.api.report.action.CompanyInfoAction">
+            <result name="company">/api_tppas/common/companyInfo.jsp</result>
+        </action>
+        <!-- 预期成果 -->
+        <action name="texpectedResults" class="com.hopsun.tppas.api.report.action.TexpectedResultsAction">
+            <result name="showtexpectedresults">/api_tppas/report/other/report_expected_results.jsp</result>
+        </action>
+        <!-- 项目达到的主要技术指标 -->
+        <action name="technicalIndexes" class="com.hopsun.tppas.api.report.action.TtechnicalIndexesAction">
+            <result name="showtechnicalindexes">/api_tppas/report/other/report_technical_indexes.jsp</result>
+        </action>
+        <!-- 申请经费-->
+       <action name="tfundingPlanReportAction" class="com.hopsun.tppas.api.report.action.TfundingPlanReportAction">
+            <result name="showfundingPlan">/api_tppas/report/other/report_funding_plan.jsp</result>
+       </action>
+        <!-- 非高新处项目负责人及主要人员 -->
+        <action name="tprojectLeader" class="com.hopsun.tppas.api.report.action.TprojectLeaderAAction">
+            <result name="researcherlist">/api_tppas/report/other/report_leader_list.jsp</result>
+            <result name="showresearcher">/api_tppas/report/other/report_leader_insert.jsp</result>
+        </action>
+         <!-- 项目投资计划 -->
+        <action name="fundplanb" class="com.hopsun.tppas.api.report.action.TfundPlanBAction">
+            <result name="showFundPlanB">/api_tppas/report/other/report_fund_plan.jsp</result>
+        </action>
+        <!-- 项目实施目标-->
+       <action name="treportobjectives" class="com.hopsun.tppas.api.report.action.TreportObjectivesAction">
+            <result name="showtreportobjectives">/api_tppas/report/highTech/report_objectives.jsp</result>
+       </action>
+	</package>
+</struts>

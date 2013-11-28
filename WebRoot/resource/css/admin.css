@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px auto; padding:0px; list-style:none; font-family:"微软雅黑",Tahoma,Helvetica,Arial,sans-serif; color:#666;}
+body{margin:0;padding:0;font-size:12px;color:#364f56;background-color:#FFFFFF;}
+images{border:0;}
+form{margin:0; padding:0;}
+input[type=text],input[type=password],textarea{border-top:1px solid #404040;border-left:1px solid #404040;border-right:1px solid #D4D0C8;border-bottom:1px solid #D4D0C8;}
+input[type=text][disabled=disabled],.disabled{background:#D4D0C8;}
+input[type=text],input[type=password]{height:17px;}
+input[type=text]:focus,input[type=password]:focus,textarea:focus{border:1px solid #000000;}
+.fleft{ float:left;}
+.fright{ float:right;}
+.mb_margin{ margin-bottom:10px;}
+.mt_margin{ margin-top:10px;}
+.m_lr{ margin-left:10px; margin-right:10px;}
+ul{list-style:none;}
+/*链接总的css定义*/
+a{text-decoration:none;}
+a:link{color:#364f56;}
+a:visited{color:#333333;}
+a:hover{color: #ae0927;}
+a:active {color: #0000ff;}
+/*菜单链接*/
+a.channel:link {color:#ffffff;}
+a.channel:visited {color:#ffffff;}
+a.channel:hover{color:#ffff00;}
+a.channel:active {color:#ffffff;}
+/*菜单链接*/
+a.normal{text-decoration:underline;}
+.clear{clear:both;}
+/*后台管理界面body体*/
+.body-box{width:99%;margin:0px auto;margin-right:auto;}
+/*后台左页body*/
+.lbody{background:url(../images/admin/lbg.jpg) right repeat-y #f6fafb;color:#666666;margin-right:6px;}
+/*后台左页菜单*/
+.lmenu{margin:6px 0 0 0;padding:0;list-style-type:none;}
+.lmenu li{padding:7px 0 7px 30px;background-image:url(../images/admin/circle.gif);background-repeat:no-repeat;background-position:15px -1px;}
+.lmenu-focus{background-color:#DDECEF;}
+/*后台左页树*/
+.lttop{padding:10px 0px 2px 0px;text-align:center;}
+/*后台右页头部*/
+.rhead{border-bottom:#dddddd 1px solid;padding:5px 15px;margin-top:5px;}
+/*后台右页当前位置*/
+.rpos{float:left;line-height:34px; font-weight:normal; background:url(../images/admin/icon.png) no-repeat 24px -257px; text-indent:50px;color:#000;}
+/*后台右页操作*/
+.ropt{float:right;padding-top:5px;}
+/*后台右页表格外框操作*/
+.right_boxtable{margin-left:3px; margin-top:10px;}
+.search_box{ margin-bottom:10px; border:solid 1px #c8dcf0;}
+	.search_box .search_title{ height:29px; line-height:29px; border-bottom:solid 1px #c8dcf0; background-image:url(../images/theme/tit-tdbg.png); color:#3566a9; padding-left:10px; padding-right:10px; font-weight:bold;}
+	.search_box .search_con{ padding:10px; font-size:12px; color:#2366a8; line-height:24px;}
+	.search_box .search_con .text_box{ height:20px; line-height:20px; border:solid 1px #404040; border-bottom:solid 1px #d4d0c8; border-right:solid 1px #d4d0c8; font-size:12px;}
+	.search_box .search_con .query{background:url(../images/theme/button.png) no-repeat -11px -77px; width:59px; height:24px; color:#666666; line-height:24px; text-indent:18px; border:0 none; cursor:pointer;}
+/*----------------left-----------------*/
+.left{width:226px;background-color:#f6fafb;}
+.date{background:url(../images/admin/bg.png) repeat-x 0px -115px; width:226px; height:34px; line-height:34px; }
+.date span{background:url(../images/admin/icon.png) no-repeat 6px -106px; text-indent:25px; display:block; color:#6a5c5c;}
+.fresh{background:url(../images/admin/bg.png) repeat-x 0px -78px; height:35px; text-align:center;}
+.fresh a{color:#326ba2; text-indent:25px; height:35px; width:55px; line-height:35px;font-size:12px;}
+
+.w-lful{width:170px; margin:0 auto; margin-top:13px;padding:0px;}
+.w-lful li{background:url(../images/admin/jeecms.png) no-repeat; width:170px; height:25px; margin-top:13px; color:#404040; line-height:25px; text-align:center;}
+.w-lful li a{color:#404040; }
+
+/*----------------right-----------------*/
+.box-positon{background:url(../images/admin/bg.png) repeat-x 0px -42px; height:34px;}
+.box-positon h1{color:#000; font-size:12px; line-height:34px; font-weight:normal; background:url(../images/admin/icon.png) no-repeat 24px -257px; text-indent:50px;margin:0;}
+.welcom-con{ margin:0 auto; width:98%;}
+.we-txt{background:url(../images/admin/jeecms.png) no-repeat 0px -80px;}
+.we-txt a{color:#ff0000;}
+.we-txt p{line-height:24px; padding-left:158px; margin-top:17px;}
+.ms{height:27px; border-bottom:1px solid #c0d5e6; border-top:1px solid #c0d5e6; margin-top:25px;padding-left:0px;}
+.ms li{color:#094f97; font-weight:bold; float:left; line-height:27px;}
+
+.wxx{width:30%;}
+.attribute{width:50%; text-indent:25px;}
+.ms-xx{height:200px;border-bottom:1px solid #c0d5e6; }
+.xx-xx{float:left; width:25%;}
+.green{color:#048e05;}
+.black{color:#1c1c1c;}
+.yy{width:15%; float:left;} 
+.attribute-xx{width:60%;}
+/* 分页 */
+.page{font-size:12px; margin-top:10px; margin-bottom:10px;}
+/* 添加修改页选项卡 */
+.admin_nTab{width: 100%;}
+.admin_nTab .TabTitle{height: 27px ;overflow: hidden; border-bottom:solid 1px #b4cfcf;}
+.admin_nTab .TabTitle ul{border:0; margin:0; padding:0;}
+.admin_nTab .TabTitle li{float: left; width: 90px; cursor: pointer; list-style:none; margin-right: 10px; text-align: center; font-size:12px; line-height:27px; height:27px;}
+.admin_nTab .TabTitle .active{ background:#e6f2fe; color:#1c5ea0; border:solid 1px #b4cfcf; border-bottom:none;}
+.admin_nTab .TabTitle .normal{  background:#f8f8f8; color:#333; border:solid 1px #ccc;}
+.admin_nTab .TabContent{width:auto; border:solid 1px #b4cfcf; border-top:none;}
+.admin_nTab .TabContent .con_box{ padding-top:10px;}
+.none {display:none;}
+/* 展开收缩层 */
+.text_show{line-height:22px;padding:0 10px;color:#666;}
+.box_hyzx h1{padding-left:10px;height:30px;line-height:30px; border-bottom: dashed 1px #ccc; font-weight:normal; margin-top:0px; font-size:12px; color:#1c5ea0; background:url(../images/admin/hederpic01.gif) no-repeat right top;}
+.box_hyzx{position:relative; background:url(../images/admin/hederpic.gif) repeat-x left top; padding-top:0px;}
+/* 搜索 */
+.search_rhyzx{  background-image:url(../images/theme/tit-tdbg.png); color:#3566a9; padding-left:3px; padding-right:3px; 
+.tips{ fong-size:12px; color:#f00; margin-left:3px;}
+/* 表单提示 */
+.Menu {
+	position: relative;
+	z-index: 1;
+	background: #FFF;
+}
+.top_box{ background:url(../images/admin/tck_topbg.gif) no-repeat left top; height:11px; overflow:hidden; float:left; width:170px;}
+.Menu2 {
+	position: absolute; z-index: 999; margin-top:-92px; width:170px; background:#fff; text-align: left; color:#f00;
+}
+.tips{ border:solid 1px #ddd; border-top:none; padding:5px; padding-top:0px; padding-bottom:0px; width:158px; float:left; font-size:12px; color:#f00; line-height:20px;}

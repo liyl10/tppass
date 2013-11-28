@@ -1,0 +1,20 @@
+.qtip .qtip-content {
+overflow:hidden;
+padding:10px;
+}
+.qtip .qtip-content .qtip-title, .qtip-cream .qtip-content .qtip-title {
+background-color:#F0DE7D;
+}
+.qtip-light .qtip-content .qtip-title {
+background-color:#F1F1F1;
+}
+.qtip-dark .qtip-content .qtip-title {
+background-color:#404040;
+}
+.qtip-red .qtip-content .qtip-title {
+background-color:#F28279;
+}
+.qtip-green .qtip-content .qtip-title {
+background-color:#B9DB8C;
+}
+.tip_msg{padding:7px 13px; background-color:#B9DB8C; width:500px; height:30px; }

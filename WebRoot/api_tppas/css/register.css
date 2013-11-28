@@ -1,0 +1,45 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: white 0px 0px; PADDING-TOP: 0px; -moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding
+}
+.validation-advice {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; COLOR: #ff3300; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.main {
+	MARGIN: 0px auto; WIDTH: 750px
+}
+.main .formRow {
+	MARGIN: 0px auto; CLEAR: both
+}
+.main .formLabel {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formField {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formClew {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formLabel2 {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formField {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formClew {
+	MARGIN: 0px auto; FLOAT: left
+}
+.main .formLabel {
+	TEXT-ALIGN: right; MARGIN: 0px auto; WIDTH: 200px
+}
+.main .formLabel2 {
+	TEXT-ALIGN: right; MARGIN: 0px auto; WIDTH: 175px
+}
+.main .formField {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 10px; MARGIN: 0px auto; WIDTH: 400px; OVERFLOW: hidden
+}
+FIELDSET {
+	BORDER-BOTTOM: #06c 1px dashed; BORDER-LEFT: #06c 1px dashed; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 600px; PADDING-RIGHT: 0px; COLOR: #333; CLEAR: both; BORDER-TOP: #06c 1px dashed; BORDER-RIGHT: #06c 1px dashed; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-LEFT: 20px; BACKGROUND: #fff; COLOR: #06c
+}

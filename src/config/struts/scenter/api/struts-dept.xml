@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- 
+@comment 部门Struts配置文件
+@author dulei
+@date 2013-01-11
+@version 1.0
+ -->	
+	<package name="dept" extends="admin" namespace="/api">
+    	<action name="dept_*" class="com.hopsun.scenter.api.dept.action.DeptAction"  method="{1}">
+       	 	<result name="{1}">/api_scenter/dept/dept_{1}.jsp</result>
+    	</action>
+	</package>
+
+</struts>

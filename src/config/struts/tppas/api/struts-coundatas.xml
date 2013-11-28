@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 统计页面 -->
+	<package name="countdatas" extends="admin" namespace="/api/countdatas">
+		<!-- 专项项目各类指标完成情况_项目类 -->
+		<!-- <action name="tprojectApplicationApi"
+			class="com.hopsun.xapdpms.api.countdatas.action.TprojectApplicationApiAction">
+			<result name="tprojectApplicationApiCondition">/api_xapdpms/countdatas/countdatas_condition.jsp
+			</result>
+			<result name="tprojectApplicationApiList">/api_xapdpms/countdatas/countdatas_list.jsp
+			</result>
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+			<result name="initExport">/api_xapdpms/countdatas/countdatas_export.jsp
+			</result>
+			<result name="showProgress">/api_xapdpms/countdatas/progress_flow.jsp</result>
+		</action> -->
+	</package>
+</struts>

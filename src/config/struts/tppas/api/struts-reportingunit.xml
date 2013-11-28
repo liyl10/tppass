@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 申报单位 -->
+	<package name="reportingunit" extends="admin" namespace="/api/reportingunit">
+		<action name="TreportingUnitAction" class="com.hopsun.tppas.api.reportingunit.action.TreportingUnitAction">
+			<!-- 申报单位查询条件 -->
+        	<result name="list">/api_tppas/reportingunit/reportingUnit_condition.jsp</result>
+        	<!-- 申报单位查询结果集 -->
+        	<result name="alllist">/api_tppas/reportingunit/reportingUnit_list.jsp</result>
+        	<!-- 申报单位信息修改 -->
+        	<result name="audit">/api_tppas/reportingunit/unit_update.jsp</result>	
+        	<!-- 设置单位信誉度 -->
+        	<result name="credit">/api_tppas/reportingunit/credit_insert.jsp</result>	
+        	<!-- 项目信息 -->
+        	<result name="project">/api_tppas/reportingunit/project_details.jsp</result>	
+        	<!-- 下拉框联动-->
+			<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+        </action>
+	</package>
+</struts>

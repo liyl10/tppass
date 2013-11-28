@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 项目初审 -->
+	<package name="beforereview" extends="admin" namespace="/api/report">
+		<action name="beforeReviewAction" class="com.hopsun.tppas.api.report.action.BeforeReviewAction">		
+			<result name="beforeReviewSearch">/api_tppas/report/before_review_search.jsp</result>
+        	<result name="beforeReviewInit">/api_tppas/report/before_review_list.jsp</result>
+        	<!-- 对单个项目进行初审 -->
+        	<!-- <result name="showBeforeReview">/api_tppas/report/before_review_list.jsp</result> -->
+        	<!-- 对选中的项目进行批量初审 -->
+        	<result name="showBeforeReviewByList">/api_tppas/report/before_review_batch.jsp</result>
+        	<result name="getDataSuccess" type="json">
+				<param name="includeProperties">backStr</param>
+			</result>
+			<result name="highTechManager">/api_tppas/report/before_review_hightech_menu.jsp</result>
+			<result name="otherManager">/api_tppas/report/before_review_other_menu.jsp</result>
+			<!-- 对单个项目进行初审 -->
+			<result name="showSubmit">/api_tppas/report/before_review_submit.jsp</result>
+        </action>
+	</package>
+</struts>

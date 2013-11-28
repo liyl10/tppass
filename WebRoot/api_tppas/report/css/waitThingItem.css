@@ -1,0 +1,40 @@
+.tabs {
+    float:left;
+    
+    width:100%;
+}
+.tabs ul
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.tabs ul li
+{
+    float: left;
+    line-height: 24px;
+    margin: 0;
+    padding: 2px 20px 0 15px;
+    border-left:1px solid #FFF;
+    
+}
+.tab-nav{
+    
+    background-image: url(/tppass/api_tppas/report/img/bg-selected.gif);
+    cursor:pointer;
+}
+.tab-nav-action{
+	background-image: url(/tppass/api_tppas/report/img/bg_top1.jpg);
+    cursor:pointer;
+}
+.tabs-body
+{
+    
+    float: left;
+    padding: 5px 0 0;
+    width: 100%;
+}
+.tabs-body div
+{
+    
+}
