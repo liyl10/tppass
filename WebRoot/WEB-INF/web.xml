@@ -3,7 +3,7 @@
 	version="2.5"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<display-name>科技计划项目申报系统-业务处室</display-name>
-	<description>tppass</description>
+	<description>tppassGit</description>
 	<context-param>
 		<param-name>webAppRootKey</param-name>
 		<param-value>webApp.root</param-value>
